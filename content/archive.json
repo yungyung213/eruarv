@@ -1,6 +1,52 @@
 {
   "posts": [
     {
+      "id": "c0ef23e2-f2ce-42b7-84af-749dd6c671e6",
+      "status": "published",
+      "payload": {
+        "id": "c0ef23e2-f2ce-42b7-84af-749dd6c671e6",
+        "date": "2026-10-19",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-02/f49b2399-c060-4cb4-b857-1c0927b0c07d.webp",
+            "type": "image",
+            "alt": "HU98Ldfa8AA5sB4.jpeg",
+            "thumb": "media/uploads/2026-11-02/f6be4e50-edbc-437b-9bcb-c571a63c2ee6.webp",
+            "medium": "media/uploads/2026-11-02/f49b2399-c060-4cb4-b857-1c0927b0c07d.webp",
+            "detail": "media/uploads/2026-11-02/f49b2399-c060-4cb4-b857-1c0927b0c07d.webp",
+            "original": "media/uploads/2026-11-02/50cc86d4-9cf6-466c-b46f-19a047f39d2f.jpg",
+            "srcset": "media/uploads/2026-11-02/f6be4e50-edbc-437b-9bcb-c571a63c2ee6.webp 640w, media/uploads/2026-11-02/f49b2399-c060-4cb4-b857-1c0927b0c07d.webp 2048w",
+            "width": 2048,
+            "height": 4096
+          },
+          {
+            "src": "media/uploads/2026-11-02/38f62b3f-351a-448d-a3cd-ca520db86659.webp",
+            "type": "image",
+            "alt": "HU98LFsbAAAeQT1.jpeg",
+            "thumb": "media/uploads/2026-11-02/c86b6f72-ab04-4cb6-89f5-bae3bcbcb711.webp",
+            "medium": "media/uploads/2026-11-02/38f62b3f-351a-448d-a3cd-ca520db86659.webp",
+            "detail": "media/uploads/2026-11-02/38f62b3f-351a-448d-a3cd-ca520db86659.webp",
+            "original": "media/uploads/2026-11-02/530b87f6-5126-43a7-977b-1f5d1167cdd1.jpg",
+            "srcset": "media/uploads/2026-11-02/c86b6f72-ab04-4cb6-89f5-bae3bcbcb711.webp 640w, media/uploads/2026-11-02/38f62b3f-351a-448d-a3cd-ca520db86659.webp 2048w",
+            "width": 2048,
+            "height": 2048
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "ERU",
+          "Zayne"
+        ],
+        "colors": [
+          "#303f8f",
+          "#3379d5"
+        ],
+        "thxTo": "moartstud1o",
+        "thxUrl": "https://x.com/moartstud1o/status/2114270157636047123?a=h4WbcTX8VsbCHMmFC0E&s=20"
+      },
+      "updated_at": "2026-11-02T11:25:33.597Z"
+    },
+    {
       "id": "3f461cbf-e369-4516-951f-b26b05ba6ede",
       "status": "published",
       "payload": {
