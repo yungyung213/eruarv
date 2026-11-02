@@ -1,0 +1,167 @@
+{
+  "posts": [
+    {
+      "id": "26-10-31-caleb",
+      "status": "published",
+      "payload": {
+        "id": "26-10-31-caleb",
+        "date": "2026-10-31",
+        "images": [
+          {
+            "src": "images/photo-2.png",
+            "type": "image",
+            "alt": "LDS photo 2"
+          },
+          {
+            "src": "images/photo-3.png",
+            "type": "image",
+            "alt": "LDS photo 3"
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "케일럽"
+        ],
+        "colors": [
+          "#ffffff",
+          "#000000"
+        ],
+        "thxTo": "moartstud1o",
+        "thxUrl": "https://x.com/moartstud1o"
+      },
+      "updated_at": "2026-11-02T10:45:09.556Z"
+    },
+    {
+      "id": "26-10-31",
+      "status": "published",
+      "payload": {
+        "id": "26-10-31",
+        "date": "2026-10-31",
+        "images": [
+          {
+            "src": "images/26-10-31.png",
+            "type": "image",
+            "alt": "Two figures facing each other in a monochrome film frame"
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "Zayne",
+          "케일럽"
+        ],
+        "colors": [
+          "#000000"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-02T10:45:09.556Z"
+    },
+    {
+      "id": "26-10-28",
+      "status": "published",
+      "payload": {
+        "id": "26-10-28",
+        "date": "2026-10-28",
+        "images": [
+          {
+            "src": "images/photo-4.png",
+            "type": "image",
+            "alt": "LDS photo 4"
+          },
+          {
+            "src": "images/photo-5.png",
+            "type": "image",
+            "alt": "LDS photo 5"
+          },
+          {
+            "src": "images/photo-6.png",
+            "type": "image",
+            "alt": "LDS photo 6"
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "ERU"
+        ],
+        "colors": [
+          "#f5ce45"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-02T10:45:09.556Z"
+    },
+    {
+      "id": "26-10-27",
+      "status": "published",
+      "payload": {
+        "id": "26-10-27",
+        "date": "2026-10-27",
+        "images": [
+          {
+            "src": "images/photo-7.png",
+            "type": "image",
+            "alt": "LDS photo 7"
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "ERU"
+        ],
+        "colors": [
+          "#e63838",
+          "#000000"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-02T10:45:09.556Z"
+    }
+  ],
+  "settings": {
+    "initialized": true,
+    "mainMedia": [
+      {
+        "src": "images/main/main-01-1600.jpg",
+        "type": "image",
+        "alt": "Yellow line on weathered pavement",
+        "srcset": "images/main/main-01-800.jpg 800w, images/main/main-01-1600.jpg 1600w",
+        "width": 1616,
+        "height": 1080
+      },
+      {
+        "src": "images/main/main-02-1600.jpg",
+        "type": "image",
+        "alt": "Sunlight and leaf shadows on a road sign",
+        "srcset": "images/main/main-02-800.jpg 800w, images/main/main-02-1600.jpg 1600w",
+        "width": 1616,
+        "height": 1080
+      },
+      {
+        "src": "images/main/main-03-1600.jpg",
+        "type": "image",
+        "alt": "Leaves against the sky",
+        "srcset": "images/main/main-03-800.jpg 800w, images/main/main-03-1600.jpg 1600w",
+        "width": 1616,
+        "height": 1080
+      },
+      {
+        "src": "images/main/main-04-736.jpg",
+        "type": "image",
+        "alt": "Soft light through the trees",
+        "srcset": "images/main/main-04-736.jpg 736w",
+        "width": 736,
+        "height": 1030
+      },
+      {
+        "src": "images/main/main-05-736.jpg",
+        "type": "image",
+        "alt": "Abstract reflections of light",
+        "srcset": "images/main/main-05-736.jpg 736w",
+        "width": 736,
+        "height": 981
+      }
+    ]
+  }
+}
