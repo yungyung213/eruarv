@@ -1,6 +1,39 @@
 {
   "posts": [
     {
+      "id": "b739411e-0bdf-4a29-bf57-eba3cae5f0cc",
+      "status": "published",
+      "payload": {
+        "id": "b739411e-0bdf-4a29-bf57-eba3cae5f0cc",
+        "date": "2026-11-02",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-02/e8d169ef-18bc-44ad-9edc-47adaef66e33.webp",
+            "type": "image",
+            "alt": "HWG0YgSbYAAq1-n.jpeg",
+            "thumb": "media/uploads/2026-11-02/e83fd609-bdda-4f82-b3e3-aa7edcf2f9a8.webp",
+            "medium": "media/uploads/2026-11-02/e8d169ef-18bc-44ad-9edc-47adaef66e33.webp",
+            "detail": "media/uploads/2026-11-02/e8d169ef-18bc-44ad-9edc-47adaef66e33.webp",
+            "original": "media/uploads/2026-11-02/93b7fead-89d7-45e9-95c3-affd823712be.jpg",
+            "srcset": "media/uploads/2026-11-02/e83fd609-bdda-4f82-b3e3-aa7edcf2f9a8.webp 640w, media/uploads/2026-11-02/e8d169ef-18bc-44ad-9edc-47adaef66e33.webp 1468w",
+            "width": 1468,
+            "height": 1950
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "Zayne"
+        ],
+        "colors": [
+          "#e63838",
+          "#000000"
+        ],
+        "thxTo": "야무",
+        "thxUrl": "https://x.com/yamuyam39/status/2116309359278096835?a=CEf0zF7LCP1ZJKo6-6I&s=20"
+      },
+      "updated_at": "2026-11-02T10:47:12.582Z"
+    },
+    {
       "id": "26-10-31-caleb",
       "status": "published",
       "payload": {
