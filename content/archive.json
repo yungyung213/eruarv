@@ -1,6 +1,76 @@
 {
   "posts": [
     {
+      "id": "fdf51c2e-a189-41d3-939e-c564e2a2a482",
+      "status": "published",
+      "payload": {
+        "id": "fdf51c2e-a189-41d3-939e-c564e2a2a482",
+        "date": "2026-10-19",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-02/720ac70a-0294-42b3-a30d-74833aa3fb30.webp",
+            "type": "image",
+            "alt": "HU7iO5baAAAlrCb.jpeg",
+            "thumb": "media/uploads/2026-11-02/c662c1e0-527e-4e96-8688-177dedb6fa80.webp",
+            "medium": "media/uploads/2026-11-02/720ac70a-0294-42b3-a30d-74833aa3fb30.webp",
+            "detail": "media/uploads/2026-11-02/720ac70a-0294-42b3-a30d-74833aa3fb30.webp",
+            "original": "media/uploads/2026-11-02/0da909db-05c6-4c8a-b6eb-af8e77bde384.jpg",
+            "srcset": "media/uploads/2026-11-02/c662c1e0-527e-4e96-8688-177dedb6fa80.webp 640w, media/uploads/2026-11-02/720ac70a-0294-42b3-a30d-74833aa3fb30.webp 1236w",
+            "width": 1236,
+            "height": 1713
+          },
+          {
+            "src": "media/uploads/2026-11-02/7b8e8661-d756-4e92-a51e-5f195ffb6b93.webp",
+            "type": "image",
+            "alt": "HU6_-vibQAAWYCi.jpeg",
+            "thumb": "media/uploads/2026-11-02/05412d3c-7cbd-4181-88b4-da9bd7af545f.webp",
+            "medium": "media/uploads/2026-11-02/7b8e8661-d756-4e92-a51e-5f195ffb6b93.webp",
+            "detail": "media/uploads/2026-11-02/7b8e8661-d756-4e92-a51e-5f195ffb6b93.webp",
+            "original": "media/uploads/2026-11-02/a63ad4d3-a23a-4835-a830-19e341679d7d.jpg",
+            "srcset": "media/uploads/2026-11-02/05412d3c-7cbd-4181-88b4-da9bd7af545f.webp 640w, media/uploads/2026-11-02/7b8e8661-d756-4e92-a51e-5f195ffb6b93.webp 1080w",
+            "width": 1080,
+            "height": 2340
+          },
+          {
+            "src": "media/uploads/2026-11-02/029be291-3f65-4183-92ba-e28f5c779c80.webp",
+            "type": "image",
+            "alt": "HU6__IfbkAEWc8G.jpeg",
+            "thumb": "media/uploads/2026-11-02/99e19987-661a-461a-ad77-97c26928988d.webp",
+            "medium": "media/uploads/2026-11-02/029be291-3f65-4183-92ba-e28f5c779c80.webp",
+            "detail": "media/uploads/2026-11-02/029be291-3f65-4183-92ba-e28f5c779c80.webp",
+            "original": "media/uploads/2026-11-02/117f514e-cece-4e39-be1c-bf8b93524c93.jpg",
+            "srcset": "media/uploads/2026-11-02/99e19987-661a-461a-ad77-97c26928988d.webp 640w, media/uploads/2026-11-02/029be291-3f65-4183-92ba-e28f5c779c80.webp 1080w",
+            "width": 1080,
+            "height": 2340
+          },
+          {
+            "src": "media/uploads/2026-11-02/8efa63a8-dfe2-49a5-914a-73b9dd31c37d.webp",
+            "type": "image",
+            "alt": "HU6__f7aMAAypOY.jpeg",
+            "thumb": "media/uploads/2026-11-02/f40a201f-a59b-4bc4-b862-fc6d22ed097b.webp",
+            "medium": "media/uploads/2026-11-02/8efa63a8-dfe2-49a5-914a-73b9dd31c37d.webp",
+            "detail": "media/uploads/2026-11-02/8efa63a8-dfe2-49a5-914a-73b9dd31c37d.webp",
+            "original": "media/uploads/2026-11-02/e649daad-154b-4a36-8766-f3494d0cdc75.jpg",
+            "srcset": "media/uploads/2026-11-02/f40a201f-a59b-4bc4-b862-fc6d22ed097b.webp 640w, media/uploads/2026-11-02/8efa63a8-dfe2-49a5-914a-73b9dd31c37d.webp 1080w",
+            "width": 1080,
+            "height": 2340
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "Zayne",
+          "ERU"
+        ],
+        "colors": [
+          "#f28c28",
+          "#303f8f"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-02T11:29:31.464Z"
+    },
+    {
       "id": "87cf57bc-7a16-49a6-8d7c-bdb4e099f322",
       "status": "published",
       "payload": {
