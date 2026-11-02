@@ -18,6 +18,18 @@
             "srcset": "media/uploads/2026-11-02/e83fd609-bdda-4f82-b3e3-aa7edcf2f9a8.webp 640w, media/uploads/2026-11-02/e8d169ef-18bc-44ad-9edc-47adaef66e33.webp 1468w",
             "width": 1468,
             "height": 1950
+          },
+          {
+            "src": "media/uploads/2026-11-02/b89bba74-2f9f-40c6-aed4-9faba8816950.webp",
+            "type": "image",
+            "alt": "HWGw3BYbwAErRWI.jpeg",
+            "thumb": "media/uploads/2026-11-02/cdc9b4e4-d597-4933-9e8a-ecdcf519c206.webp",
+            "medium": "media/uploads/2026-11-02/b89bba74-2f9f-40c6-aed4-9faba8816950.webp",
+            "detail": "media/uploads/2026-11-02/b89bba74-2f9f-40c6-aed4-9faba8816950.webp",
+            "original": "media/uploads/2026-11-02/40ed6e0a-e539-421d-b4f0-7bc5e70c4f30.jpg",
+            "srcset": "media/uploads/2026-11-02/cdc9b4e4-d597-4933-9e8a-ecdcf519c206.webp 640w, media/uploads/2026-11-02/b89bba74-2f9f-40c6-aed4-9faba8816950.webp 1080w",
+            "width": 1080,
+            "height": 2340
           }
         ],
         "genre": "LDS",
@@ -31,7 +43,7 @@
         "thxTo": "yamu",
         "thxUrl": "https://x.com/yamuyam39/status/2116309359278096835?a=CEf0zF7LCP1ZJKo6-6I&s=20"
       },
-      "updated_at": "2026-11-02T11:18:11.912Z"
+      "updated_at": "2026-11-02T11:18:43.585Z"
     },
     {
       "id": "26-10-31-caleb",
