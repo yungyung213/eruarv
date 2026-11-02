@@ -1,6 +1,87 @@
 {
   "posts": [
     {
+      "id": "3f461cbf-e369-4516-951f-b26b05ba6ede",
+      "status": "published",
+      "payload": {
+        "id": "3f461cbf-e369-4516-951f-b26b05ba6ede",
+        "date": "2026-10-21",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-02/897fd023-0b50-42a0-9649-2321c4b94968.webp",
+            "type": "image",
+            "alt": "HVJU3IMbcAACf0_.jpeg",
+            "thumb": "media/uploads/2026-11-02/6b0149e2-6891-4cd2-a264-c12b6855a808.webp",
+            "medium": "media/uploads/2026-11-02/897fd023-0b50-42a0-9649-2321c4b94968.webp",
+            "detail": "media/uploads/2026-11-02/897fd023-0b50-42a0-9649-2321c4b94968.webp",
+            "original": "media/uploads/2026-11-02/fac3bc79-7dd4-4d17-9ea7-bb95ba25bd06.jpg",
+            "srcset": "media/uploads/2026-11-02/6b0149e2-6891-4cd2-a264-c12b6855a808.webp 640w, media/uploads/2026-11-02/897fd023-0b50-42a0-9649-2321c4b94968.webp 1280w",
+            "width": 1280,
+            "height": 2773
+          },
+          {
+            "src": "media/uploads/2026-11-02/38590919-8d14-43b8-8a79-db6080e2f1bf.webp",
+            "type": "image",
+            "alt": "HVJU2qMakAEXk4X.jpeg",
+            "thumb": "media/uploads/2026-11-02/5bcf39c9-49d1-4422-ad01-86b92f0f4452.webp",
+            "medium": "media/uploads/2026-11-02/38590919-8d14-43b8-8a79-db6080e2f1bf.webp",
+            "detail": "media/uploads/2026-11-02/38590919-8d14-43b8-8a79-db6080e2f1bf.webp",
+            "original": "media/uploads/2026-11-02/c61e089c-cc3c-4f32-9174-7cc42ff04102.jpg",
+            "srcset": "media/uploads/2026-11-02/5bcf39c9-49d1-4422-ad01-86b92f0f4452.webp 640w, media/uploads/2026-11-02/38590919-8d14-43b8-8a79-db6080e2f1bf.webp 1280w",
+            "width": 1280,
+            "height": 2773
+          },
+          {
+            "src": "media/uploads/2026-11-02/e4e11cf6-34dc-4869-a894-973d60ee5cc3.webp",
+            "type": "image",
+            "alt": "HVJU2MMbkAAisHq.jpeg",
+            "thumb": "media/uploads/2026-11-02/09c213e2-9013-4f00-99ed-bf7e9e909ed2.webp",
+            "medium": "media/uploads/2026-11-02/e4e11cf6-34dc-4869-a894-973d60ee5cc3.webp",
+            "detail": "media/uploads/2026-11-02/e4e11cf6-34dc-4869-a894-973d60ee5cc3.webp",
+            "original": "media/uploads/2026-11-02/33326ee5-9dcf-4b40-882b-f78286070f20.jpg",
+            "srcset": "media/uploads/2026-11-02/09c213e2-9013-4f00-99ed-bf7e9e909ed2.webp 640w, media/uploads/2026-11-02/e4e11cf6-34dc-4869-a894-973d60ee5cc3.webp 1280w",
+            "width": 1280,
+            "height": 2773
+          },
+          {
+            "src": "media/uploads/2026-11-02/d547a6a3-b711-499d-96b2-e06cc421b510.webp",
+            "type": "image",
+            "alt": "HVJU1ixaUAEhJma.jpeg",
+            "thumb": "media/uploads/2026-11-02/d8700ce9-4e25-43da-885c-08d770ea7a7c.webp",
+            "medium": "media/uploads/2026-11-02/d547a6a3-b711-499d-96b2-e06cc421b510.webp",
+            "detail": "media/uploads/2026-11-02/d547a6a3-b711-499d-96b2-e06cc421b510.webp",
+            "original": "media/uploads/2026-11-02/0d563735-b482-48b8-8d23-42df9436a2c6.jpg",
+            "srcset": "media/uploads/2026-11-02/d8700ce9-4e25-43da-885c-08d770ea7a7c.webp 640w, media/uploads/2026-11-02/d547a6a3-b711-499d-96b2-e06cc421b510.webp 1280w",
+            "width": 1280,
+            "height": 2773
+          },
+          {
+            "src": "media/uploads/2026-11-02/c7831a03-d3c7-43a6-a655-ebbbd48212fb.webp",
+            "type": "image",
+            "alt": "HViT4Eja0AAn6WC.jpeg",
+            "thumb": "media/uploads/2026-11-02/e21bbbd4-4067-468d-9417-effc7eea3897.webp",
+            "medium": "media/uploads/2026-11-02/c7831a03-d3c7-43a6-a655-ebbbd48212fb.webp",
+            "detail": "media/uploads/2026-11-02/c7831a03-d3c7-43a6-a655-ebbbd48212fb.webp",
+            "original": "media/uploads/2026-11-02/f9e2a40b-71ef-4101-9f94-d4d5d3d3e3aa.jpg",
+            "srcset": "media/uploads/2026-11-02/e21bbbd4-4067-468d-9417-effc7eea3897.webp 640w, media/uploads/2026-11-02/c7831a03-d3c7-43a6-a655-ebbbd48212fb.webp 1280w",
+            "width": 1280,
+            "height": 2773
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "ERU"
+        ],
+        "colors": [
+          "#000000",
+          "#ffffff"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-02T11:21:10.188Z"
+    },
+    {
       "id": "b739411e-0bdf-4a29-bf57-eba3cae5f0cc",
       "status": "published",
       "payload": {
