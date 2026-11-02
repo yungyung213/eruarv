@@ -1,0 +1,1 @@
+[{"AllowedOrigins":["https://eruarv.netlify.app"],"AllowedMethods":["GET","HEAD","PUT"],"AllowedHeaders":["Content-Type","x-amz-*"],"ExposeHeaders":["ETag"],"MaxAgeSeconds":3600}]

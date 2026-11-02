@@ -1,0 +1,32 @@
+:root{--page-gutter:4vw;--home-header-height:96px;--home-footer-space:80px}
+.home-page{background:var(--bg)}
+.home-page header{position:absolute;inset:0 var(--page-gutter) auto;margin:0;height:var(--home-header-height);display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);column-gap:24px;background:none}
+.home-page header .logo{justify-self:start}.home-page header nav{justify-self:center}.home-page header>span{justify-self:end;text-align:right}
+.home-page .hero{height:100svh;min-height:620px;max-height:none;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:auto minmax(0,1fr) auto;column-gap:24px;row-gap:24px;justify-content:normal;padding:calc(var(--home-header-height) + 32px) var(--page-gutter) var(--home-footer-space)}
+.home-page .caption{grid-column:1/-1;grid-row:1;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start;color:var(--text);text-shadow:none}
+.home-page .caption>span:first-child{grid-column:1/7;justify-self:start}.home-page .caption>span:last-child{grid-column:7/-1;justify-self:end;text-align:right}
+.home-page .hero h1{grid-column:1/-1;grid-row:2;align-self:center;position:relative;margin:0;min-width:0;font-size:min(13.3vw,225px);line-height:.98;color:var(--text);text-shadow:none}
+.home-page .hero h1>span+span{margin-top:clamp(10px,1.2vw,18px);text-align:left}
+.home-page .hero-bottom{grid-column:1/-1;grid-row:3;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:0;position:relative;inset:auto;margin:0;padding:0;align-items:center;min-width:0;color:var(--text);text-shadow:none}
+.home-page .hero-bottom>span:first-child{grid-column:1/5;justify-self:start}.home-page .hero-bottom>a{grid-column:5/9;justify-self:center}.home-page .hero-bottom>span:last-child{grid-column:9/-1;justify-self:end;text-align:right}
+.home-page .hero-media-wrap{inset:0;background:var(--bg)}.particle-canvas{display:block;width:100%;height:100%}
+.home-page .hero-media-wrap::after{background:linear-gradient(to top,rgba(20,20,20,.85),rgba(20,20,20,0) 32%,rgba(20,20,20,.12))}
+.home-page .footer-shell footer{margin:0 var(--page-gutter);grid-template-columns:minmax(0,1fr) auto minmax(0,1fr)}
+.home-page .footer-shell footer>span{grid-column:1;justify-self:start}.home-page .footer-shell footer>a{grid-column:3;justify-self:end}
+@media(max-width:700px){
+ :root{--home-header-height:76px;--home-footer-space:80px}
+ .home-page header{column-gap:12px;grid-template-columns:minmax(0,1fr) auto}.home-page header nav{grid-column:2;justify-self:end}.home-page header>span{display:none}
+ .home-page .hero{min-height:600px;column-gap:12px;row-gap:24px;padding-top:calc(var(--home-header-height) + 28px)}
+ .home-page .caption{column-gap:12px}.home-page .hero h1{font-size:20vw;margin:0}
+ .home-page .hero-bottom{column-gap:12px;font-size:10px}.home-page .hero-bottom>span:first-child{grid-column:1/7}.home-page .hero-bottom>a{grid-column:7/-1;justify-self:end}.home-page .hero-bottom>span:last-child{display:none}
+}
+
+/* Keep the footer fade behind the scene, not on top of the lower text row. */
+.home-page .footer-shell::before{display:none}
+.home-page .hero-media-wrap::after{background:linear-gradient(to top,#141414 0%,rgba(20,20,20,0) 32%,rgba(20,20,20,.12))}
+
+
+#hero-media{background:var(--bg)}.particle-canvas{position:relative;z-index:0}
+
+/* Soften individual specks without blurring typography or navigation. */
+.particle-canvas{filter:blur(.65px);opacity:.85}
