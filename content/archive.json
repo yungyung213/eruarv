@@ -1,6 +1,52 @@
 {
   "posts": [
     {
+      "id": "87cf57bc-7a16-49a6-8d7c-bdb4e099f322",
+      "status": "published",
+      "payload": {
+        "id": "87cf57bc-7a16-49a6-8d7c-bdb4e099f322",
+        "date": "2026-10-19",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-02/cb811551-09dc-43d7-8f62-6f7ecab76e9e.webp",
+            "type": "image",
+            "alt": "HU7iQ5Ya8AAZYjU.jpeg",
+            "thumb": "media/uploads/2026-11-02/e4ba5b55-7087-4f6e-ade7-825da19ea39b.webp",
+            "medium": "media/uploads/2026-11-02/cb811551-09dc-43d7-8f62-6f7ecab76e9e.webp",
+            "detail": "media/uploads/2026-11-02/cb811551-09dc-43d7-8f62-6f7ecab76e9e.webp",
+            "original": "media/uploads/2026-11-02/319d27ee-a1c9-4384-8ad0-2cfec378d9f3.jpg",
+            "srcset": "media/uploads/2026-11-02/e4ba5b55-7087-4f6e-ade7-825da19ea39b.webp 640w, media/uploads/2026-11-02/cb811551-09dc-43d7-8f62-6f7ecab76e9e.webp 1236w",
+            "width": 1236,
+            "height": 1713
+          },
+          {
+            "src": "media/uploads/2026-11-02/dfa6fbfc-8dc6-4ba9-9e92-ba65aa109fdc.webp",
+            "type": "image",
+            "alt": "HU6mK8haIAAyYt3.jpeg",
+            "thumb": "media/uploads/2026-11-02/1c6fdf8b-5044-49ee-92a8-676d36de9ad9.webp",
+            "medium": "media/uploads/2026-11-02/dfa6fbfc-8dc6-4ba9-9e92-ba65aa109fdc.webp",
+            "detail": "media/uploads/2026-11-02/dfa6fbfc-8dc6-4ba9-9e92-ba65aa109fdc.webp",
+            "original": "media/uploads/2026-11-02/3523e3bb-b3b3-40a9-97f6-92744cb1d0c6.jpg",
+            "srcset": "media/uploads/2026-11-02/1c6fdf8b-5044-49ee-92a8-676d36de9ad9.webp 640w, media/uploads/2026-11-02/dfa6fbfc-8dc6-4ba9-9e92-ba65aa109fdc.webp 1280w",
+            "width": 1280,
+            "height": 2773
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "ERU",
+          "Zayne"
+        ],
+        "colors": [
+          "#ffffff",
+          "#808080"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-02T11:28:17.380Z"
+    },
+    {
       "id": "c0ef23e2-f2ce-42b7-84af-749dd6c671e6",
       "status": "published",
       "payload": {
