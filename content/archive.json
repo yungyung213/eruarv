@@ -322,18 +322,6 @@
         "srcset": "images/main/main-05-736.jpg 736w",
         "width": 736,
         "height": 981
-      },
-      {
-        "src": "media/uploads/2026-11-02/4261a34a-a088-42c1-b8a9-7faa00e3d3e9.webp",
-        "type": "image",
-        "alt": "HWG0YgSbYAAq1-n.jpeg",
-        "thumb": "media/uploads/2026-11-02/659d53bf-d7a4-44e4-95ea-6df2e3b18a11.webp",
-        "medium": "media/uploads/2026-11-02/4261a34a-a088-42c1-b8a9-7faa00e3d3e9.webp",
-        "detail": "media/uploads/2026-11-02/4261a34a-a088-42c1-b8a9-7faa00e3d3e9.webp",
-        "original": "media/uploads/2026-11-02/4252e092-3d5f-4814-bb8d-d8ee08b9b888.jpg",
-        "srcset": "media/uploads/2026-11-02/659d53bf-d7a4-44e4-95ea-6df2e3b18a11.webp 640w, media/uploads/2026-11-02/4261a34a-a088-42c1-b8a9-7faa00e3d3e9.webp 1468w",
-        "width": 1468,
-        "height": 1950
       }
     ],
     "taxonomy": {
