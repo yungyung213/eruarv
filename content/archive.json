@@ -308,7 +308,7 @@
         ],
         "genre": "LDS",
         "other": [
-          "Caleb"
+          "Ha Woo-joo"
         ],
         "colors": [
           "#ffffff",
@@ -488,8 +488,11 @@
     ],
     "taxonomy": {
       "other": [
-        "Caleb"
+        "Ha Woo-joo",
+        "Zayne",
+        "ERU"
       ]
     }
-  }
+  },
+  "trash": []
 }
