@@ -1,6 +1,51 @@
 {
   "posts": [
     {
+      "id": "c7c6fcc1-76db-4aa9-a37a-f82366c4619d",
+      "status": "published",
+      "payload": {
+        "id": "c7c6fcc1-76db-4aa9-a37a-f82366c4619d",
+        "date": "2026-11-10",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-12/4a1c9de9-4874-42d1-a6bb-19983f2bd3da.webp",
+            "type": "image",
+            "alt": "HWl3tpQbcAAbZF2.jpeg",
+            "thumb": "media/uploads/2026-11-12/669cd2ef-03a2-4071-96cc-3c8c8686efca.webp",
+            "medium": "media/uploads/2026-11-12/4a1c9de9-4874-42d1-a6bb-19983f2bd3da.webp",
+            "detail": "media/uploads/2026-11-12/4a1c9de9-4874-42d1-a6bb-19983f2bd3da.webp",
+            "original": "media/uploads/2026-11-12/83848b80-fb16-404f-8ddd-fac652fad7b5.jpg",
+            "srcset": "media/uploads/2026-11-12/669cd2ef-03a2-4071-96cc-3c8c8686efca.webp 640w, media/uploads/2026-11-12/4a1c9de9-4874-42d1-a6bb-19983f2bd3da.webp 1080w",
+            "width": 1080,
+            "height": 2340
+          },
+          {
+            "src": "media/uploads/2026-11-12/0fed22de-f7f3-4abd-8124-a86f6a7603e0.webp",
+            "type": "image",
+            "alt": "HWl3tUaakAAXm6J.jpeg",
+            "thumb": "media/uploads/2026-11-12/00f9b0d2-5c53-4e98-8b98-738b787ae3fe.webp",
+            "medium": "media/uploads/2026-11-12/0fed22de-f7f3-4abd-8124-a86f6a7603e0.webp",
+            "detail": "media/uploads/2026-11-12/0fed22de-f7f3-4abd-8124-a86f6a7603e0.webp",
+            "original": "media/uploads/2026-11-12/24aca77b-3ce4-488d-9128-f191a4b4fb7d.jpg",
+            "srcset": "media/uploads/2026-11-12/00f9b0d2-5c53-4e98-8b98-738b787ae3fe.webp 640w, media/uploads/2026-11-12/0fed22de-f7f3-4abd-8124-a86f6a7603e0.webp 1080w",
+            "width": 1080,
+            "height": 1920
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "Naru"
+        ],
+        "colors": [
+          "#ffffff",
+          "#808080"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-12T19:34:04.945Z"
+    },
+    {
       "id": "26-10-31",
       "status": "published",
       "payload": {
