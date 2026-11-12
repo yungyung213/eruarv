@@ -1,6 +1,38 @@
 {
   "posts": [
     {
+      "id": "79ca04f6-3c15-4a91-b861-322127d2c8af",
+      "status": "published",
+      "payload": {
+        "id": "79ca04f6-3c15-4a91-b861-322127d2c8af",
+        "date": "2026-10-01",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-12/6f6b7ae2-9c94-4b83-8301-c72f8d1d7f78.webp",
+            "type": "image",
+            "alt": "HTe3JpDaEAAHzIs.jpeg",
+            "thumb": "media/uploads/2026-11-12/bc2e7eba-4581-4a9a-936b-d5857f03047b.webp",
+            "medium": "media/uploads/2026-11-12/6f6b7ae2-9c94-4b83-8301-c72f8d1d7f78.webp",
+            "detail": "media/uploads/2026-11-12/6f6b7ae2-9c94-4b83-8301-c72f8d1d7f78.webp",
+            "original": "media/uploads/2026-11-12/7e1b75e4-f022-4fee-9c12-b26cce503742.jpg",
+            "srcset": "media/uploads/2026-11-12/bc2e7eba-4581-4a9a-936b-d5857f03047b.webp 640w, media/uploads/2026-11-12/6f6b7ae2-9c94-4b83-8301-c72f8d1d7f78.webp 2400w",
+            "width": 2400,
+            "height": 3200
+          }
+        ],
+        "genre": "PHOTO",
+        "other": [
+          "Lee Seo-eon"
+        ],
+        "colors": [
+          "#3379d5"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-12T19:47:54.275Z"
+    },
+    {
       "id": "a1f8d285-f7f3-4f6a-81ff-6d747a9c03e2",
       "status": "published",
       "payload": {
