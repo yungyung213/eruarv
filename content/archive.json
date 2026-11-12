@@ -84,11 +84,15 @@
         "other": [
           "Lee Seo-eon"
         ],
-        "colors": [],
+        "colors": [
+          "#ffffff",
+          "#808080",
+          "#000000"
+        ],
         "thxTo": "새별",
         "thxUrl": "https://x.com/Sylus_Saebyeol"
       },
-      "updated_at": "2026-11-12T18:55:47.237Z"
+      "updated_at": "2026-11-12T18:56:43.170Z"
     },
     {
       "id": "fdf51c2e-a189-41d3-939e-c564e2a2a482",
