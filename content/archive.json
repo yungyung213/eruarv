@@ -1,6 +1,51 @@
 {
   "posts": [
     {
+      "id": "f2fa00df-f2d3-4141-ade1-6589525dee6e",
+      "status": "published",
+      "payload": {
+        "id": "f2fa00df-f2d3-4141-ade1-6589525dee6e",
+        "date": "2026-09-05",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-12/4d665a18-2aa2-4c0f-907a-29794301ebcd.webp",
+            "type": "image",
+            "alt": "무제-6_thum.jpg",
+            "thumb": "media/uploads/2026-11-12/20a5945f-4db7-405f-a550-3bc01cd70616.webp",
+            "medium": "media/uploads/2026-11-12/4d665a18-2aa2-4c0f-907a-29794301ebcd.webp",
+            "detail": "media/uploads/2026-11-12/4d665a18-2aa2-4c0f-907a-29794301ebcd.webp",
+            "original": "media/uploads/2026-11-12/179cbb73-8084-4457-b783-ffb26cdc7ba0.jpg",
+            "srcset": "media/uploads/2026-11-12/20a5945f-4db7-405f-a550-3bc01cd70616.webp 640w, media/uploads/2026-11-12/4d665a18-2aa2-4c0f-907a-29794301ebcd.webp 1000w",
+            "width": 1000,
+            "height": 1354
+          },
+          {
+            "src": "media/uploads/2026-11-12/71424c10-6d21-4c28-a615-13ea4dcf4213.webp",
+            "type": "image",
+            "alt": "무제-6.jpg",
+            "thumb": "media/uploads/2026-11-12/4dd0d8c1-b375-4f19-b5b7-7cf3beda5d8a.webp",
+            "medium": "media/uploads/2026-11-12/71424c10-6d21-4c28-a615-13ea4dcf4213.webp",
+            "detail": "media/uploads/2026-11-12/71424c10-6d21-4c28-a615-13ea4dcf4213.webp",
+            "original": "media/uploads/2026-11-12/ee914891-cc4f-4106-bc71-2718cac6288d.jpg",
+            "srcset": "media/uploads/2026-11-12/4dd0d8c1-b375-4f19-b5b7-7cf3beda5d8a.webp 640w, media/uploads/2026-11-12/71424c10-6d21-4c28-a615-13ea4dcf4213.webp 1500w",
+            "width": 1500,
+            "height": 3500
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "Lee Seo-eon"
+        ],
+        "colors": [
+          "#3b9b59",
+          "#303f8f"
+        ],
+        "thxTo": "카롱",
+        "thxUrl": "https://x.com/Ch4r0nn_"
+      },
+      "updated_at": "2026-11-12T19:16:17.054Z"
+    },
+    {
       "id": "4b92cf5e-2dcd-4420-9399-434d853968a1",
       "status": "published",
       "payload": {
