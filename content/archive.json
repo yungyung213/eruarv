@@ -1,6 +1,63 @@
 {
   "posts": [
     {
+      "id": "763ade7c-198f-4b8b-b59e-a6865b388916",
+      "status": "published",
+      "payload": {
+        "id": "763ade7c-198f-4b8b-b59e-a6865b388916",
+        "date": "2026-10-17",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-12/01adcc59-1087-4912-8ba7-df57c33c10c1.webp",
+            "type": "image",
+            "alt": "HU1V0ToaYAAorVY.jpeg",
+            "thumb": "media/uploads/2026-11-12/7c6d221c-f31e-4120-aba1-1eea33f6ef16.webp",
+            "medium": "media/uploads/2026-11-12/01adcc59-1087-4912-8ba7-df57c33c10c1.webp",
+            "detail": "media/uploads/2026-11-12/01adcc59-1087-4912-8ba7-df57c33c10c1.webp",
+            "original": "media/uploads/2026-11-12/a0acc4ac-828d-4bed-a590-bddd4016a18a.jpg",
+            "srcset": "media/uploads/2026-11-12/7c6d221c-f31e-4120-aba1-1eea33f6ef16.webp 640w, media/uploads/2026-11-12/01adcc59-1087-4912-8ba7-df57c33c10c1.webp 2400w",
+            "width": 2400,
+            "height": 3200
+          },
+          {
+            "src": "media/uploads/2026-11-12/281cf620-4d90-4bcb-b70f-949e36929c46.webp",
+            "type": "image",
+            "alt": "HU1V1JgakAAob7q.jpeg",
+            "thumb": "media/uploads/2026-11-12/2dd3de8e-a40b-4b31-9fe3-8d6bbc7e56b3.webp",
+            "medium": "media/uploads/2026-11-12/281cf620-4d90-4bcb-b70f-949e36929c46.webp",
+            "detail": "media/uploads/2026-11-12/281cf620-4d90-4bcb-b70f-949e36929c46.webp",
+            "original": "media/uploads/2026-11-12/e1675cce-6cc4-40fe-a5b5-a4266a03f820.jpg",
+            "srcset": "media/uploads/2026-11-12/2dd3de8e-a40b-4b31-9fe3-8d6bbc7e56b3.webp 640w, media/uploads/2026-11-12/281cf620-4d90-4bcb-b70f-949e36929c46.webp 2400w",
+            "width": 2400,
+            "height": 3200
+          },
+          {
+            "src": "media/uploads/2026-11-12/f1876bbf-4b94-49c1-8499-75783b74ffdd.webp",
+            "type": "image",
+            "alt": "HU2CZA8asAA-B8f.jpeg",
+            "thumb": "media/uploads/2026-11-12/7fc4d66a-039d-46d7-ad6d-3debec9d0134.webp",
+            "medium": "media/uploads/2026-11-12/f1876bbf-4b94-49c1-8499-75783b74ffdd.webp",
+            "detail": "media/uploads/2026-11-12/f1876bbf-4b94-49c1-8499-75783b74ffdd.webp",
+            "original": "media/uploads/2026-11-12/d6c7402f-4b93-4379-ae6a-b882eab2afe1.jpg",
+            "srcset": "media/uploads/2026-11-12/7fc4d66a-039d-46d7-ad6d-3debec9d0134.webp 640w, media/uploads/2026-11-12/f1876bbf-4b94-49c1-8499-75783b74ffdd.webp 2400w",
+            "width": 2400,
+            "height": 3200
+          }
+        ],
+        "genre": "PHOTO",
+        "other": [
+          "Lee Seo-eon"
+        ],
+        "colors": [
+          "#f5ce45",
+          "#3379d5"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-12T19:43:13.144Z"
+    },
+    {
       "id": "065491cd-9037-4efd-b1ad-eeb4299ba67f",
       "status": "published",
       "payload": {
