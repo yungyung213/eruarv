@@ -1515,6 +1515,10 @@
         "TEXT",
         "PHOTO"
       ]
+    },
+    "appearance": {
+      "theme": "light",
+      "particles": false
     }
   },
   "trash": []
