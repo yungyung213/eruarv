@@ -1,6 +1,51 @@
 {
   "posts": [
     {
+      "id": "dbe30ad9-db42-4b2b-a3b6-440a5777e834",
+      "status": "published",
+      "payload": {
+        "id": "dbe30ad9-db42-4b2b-a3b6-440a5777e834",
+        "date": "2026-09-05",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-12/3c096bcf-87e4-46eb-80de-9553d615a294.webp",
+            "type": "image",
+            "alt": "무제-7.jpg",
+            "thumb": "media/uploads/2026-11-12/35e3001a-13ba-4660-b203-65d3ca38c6ab.webp",
+            "medium": "media/uploads/2026-11-12/3c096bcf-87e4-46eb-80de-9553d615a294.webp",
+            "detail": "media/uploads/2026-11-12/3c096bcf-87e4-46eb-80de-9553d615a294.webp",
+            "original": "media/uploads/2026-11-12/01187361-2b33-4e02-b091-04f21e8b46de.jpg",
+            "srcset": "media/uploads/2026-11-12/35e3001a-13ba-4660-b203-65d3ca38c6ab.webp 640w, media/uploads/2026-11-12/3c096bcf-87e4-46eb-80de-9553d615a294.webp 1000w",
+            "width": 1000,
+            "height": 1354
+          },
+          {
+            "src": "media/uploads/2026-11-12/57526f8b-4877-4482-bb1e-df85d5fa56eb.webp",
+            "type": "image",
+            "alt": "무제-7-1.jpeg",
+            "thumb": "media/uploads/2026-11-12/4f1c66b3-ac3b-4ac6-ae52-31c1ded4610a.webp",
+            "medium": "media/uploads/2026-11-12/57526f8b-4877-4482-bb1e-df85d5fa56eb.webp",
+            "detail": "media/uploads/2026-11-12/57526f8b-4877-4482-bb1e-df85d5fa56eb.webp",
+            "original": "media/uploads/2026-11-12/74a65361-60b0-408e-a29c-0f73e8528ff6.jpg",
+            "srcset": "media/uploads/2026-11-12/4f1c66b3-ac3b-4ac6-ae52-31c1ded4610a.webp 640w, media/uploads/2026-11-12/57526f8b-4877-4482-bb1e-df85d5fa56eb.webp 862w",
+            "width": 862,
+            "height": 1304
+          }
+        ],
+        "genre": "TEXT",
+        "other": [
+          "Lee Seo-eon"
+        ],
+        "colors": [
+          "#303f8f",
+          "#000000"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-12T19:54:35.472Z"
+    },
+    {
       "id": "f2fa00df-f2d3-4141-ade1-6589525dee6e",
       "status": "published",
       "payload": {
@@ -1033,52 +1078,6 @@
         "thxUrl": ""
       },
       "updated_at": "2026-11-12T19:26:51.350Z"
-    },
-    {
-      "id": "dbe30ad9-db42-4b2b-a3b6-440a5777e834",
-      "status": "published",
-      "payload": {
-        "id": "dbe30ad9-db42-4b2b-a3b6-440a5777e834",
-        "date": "2026-09-05",
-        "images": [
-          {
-            "src": "media/uploads/2026-11-12/3c096bcf-87e4-46eb-80de-9553d615a294.webp",
-            "type": "image",
-            "alt": "무제-7.jpg",
-            "thumb": "media/uploads/2026-11-12/35e3001a-13ba-4660-b203-65d3ca38c6ab.webp",
-            "medium": "media/uploads/2026-11-12/3c096bcf-87e4-46eb-80de-9553d615a294.webp",
-            "detail": "media/uploads/2026-11-12/3c096bcf-87e4-46eb-80de-9553d615a294.webp",
-            "original": "media/uploads/2026-11-12/01187361-2b33-4e02-b091-04f21e8b46de.jpg",
-            "srcset": "media/uploads/2026-11-12/35e3001a-13ba-4660-b203-65d3ca38c6ab.webp 640w, media/uploads/2026-11-12/3c096bcf-87e4-46eb-80de-9553d615a294.webp 1000w",
-            "width": 1000,
-            "height": 1354
-          },
-          {
-            "src": "media/uploads/2026-11-12/57526f8b-4877-4482-bb1e-df85d5fa56eb.webp",
-            "type": "image",
-            "alt": "무제-7-1.jpeg",
-            "thumb": "media/uploads/2026-11-12/4f1c66b3-ac3b-4ac6-ae52-31c1ded4610a.webp",
-            "medium": "media/uploads/2026-11-12/57526f8b-4877-4482-bb1e-df85d5fa56eb.webp",
-            "detail": "media/uploads/2026-11-12/57526f8b-4877-4482-bb1e-df85d5fa56eb.webp",
-            "original": "media/uploads/2026-11-12/74a65361-60b0-408e-a29c-0f73e8528ff6.jpg",
-            "srcset": "media/uploads/2026-11-12/4f1c66b3-ac3b-4ac6-ae52-31c1ded4610a.webp 640w, media/uploads/2026-11-12/57526f8b-4877-4482-bb1e-df85d5fa56eb.webp 862w",
-            "width": 862,
-            "height": 1304
-          }
-        ],
-        "genre": "",
-        "other": [
-          "Lee Seo-eon",
-          "Text"
-        ],
-        "colors": [
-          "#303f8f",
-          "#000000"
-        ],
-        "thxTo": "",
-        "thxUrl": ""
-      },
-      "updated_at": "2026-11-12T19:20:19.699Z"
     },
     {
       "id": "fdf51c2e-a189-41d3-939e-c564e2a2a482",
