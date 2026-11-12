@@ -677,7 +677,8 @@
         "Naru"
       ],
       "genre": [
-        "TEXT"
+        "TEXT",
+        "PHOTO"
       ]
     }
   },
