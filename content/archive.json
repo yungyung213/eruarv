@@ -1,6 +1,50 @@
 {
   "posts": [
     {
+      "id": "f27152c9-285d-48f5-9186-65977e8acf06",
+      "status": "published",
+      "payload": {
+        "id": "f27152c9-285d-48f5-9186-65977e8acf06",
+        "date": "2026-09-29",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-12/27b3f259-b418-41f2-b141-a272d2cd2441.webp",
+            "type": "image",
+            "alt": "HTWqAy4asAArLlm.jpeg",
+            "thumb": "media/uploads/2026-11-12/28975c4e-2e2a-425a-b928-eb86bf58af09.webp",
+            "medium": "media/uploads/2026-11-12/27b3f259-b418-41f2-b141-a272d2cd2441.webp",
+            "detail": "media/uploads/2026-11-12/27b3f259-b418-41f2-b141-a272d2cd2441.webp",
+            "original": "media/uploads/2026-11-12/cad26b48-3ab8-4033-8fad-11e35c92f1b2.jpg",
+            "srcset": "media/uploads/2026-11-12/28975c4e-2e2a-425a-b928-eb86bf58af09.webp 640w, media/uploads/2026-11-12/27b3f259-b418-41f2-b141-a272d2cd2441.webp 2400w",
+            "width": 2400,
+            "height": 3200
+          },
+          {
+            "src": "media/uploads/2026-11-12/9e086c26-ff49-4f82-adb5-09028e5ef50f.webp",
+            "type": "image",
+            "alt": "HTWqvf2agAA390O.jpeg",
+            "thumb": "media/uploads/2026-11-12/602df9b5-6865-41e0-b7f1-bf43c021ceb1.webp",
+            "medium": "media/uploads/2026-11-12/9e086c26-ff49-4f82-adb5-09028e5ef50f.webp",
+            "detail": "media/uploads/2026-11-12/9e086c26-ff49-4f82-adb5-09028e5ef50f.webp",
+            "original": "media/uploads/2026-11-12/fbd8570e-b1d2-4db8-8a00-9d24dee89468.jpg",
+            "srcset": "media/uploads/2026-11-12/602df9b5-6865-41e0-b7f1-bf43c021ceb1.webp 640w, media/uploads/2026-11-12/9e086c26-ff49-4f82-adb5-09028e5ef50f.webp 2400w",
+            "width": 2400,
+            "height": 3200
+          }
+        ],
+        "genre": "PHOTO",
+        "other": [
+          "Lee Seo-eon"
+        ],
+        "colors": [
+          "#3379d5"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-12T19:49:45.341Z"
+    },
+    {
       "id": "79ca04f6-3c15-4a91-b861-322127d2c8af",
       "status": "published",
       "payload": {
