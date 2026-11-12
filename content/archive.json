@@ -1,6 +1,65 @@
 {
   "posts": [
     {
+      "id": "13dba75a-5c31-46fe-b696-f8a8309791ec",
+      "status": "published",
+      "payload": {
+        "id": "13dba75a-5c31-46fe-b696-f8a8309791ec",
+        "date": "2026-11-10",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-12/0373c070-749b-404e-81b1-1f53e8d6cc32.webp",
+            "type": "image",
+            "alt": "HWsyn_KaEAAg0ry.jpeg",
+            "thumb": "media/uploads/2026-11-12/ac30fc53-fbae-4852-82e5-15f40627e761.webp",
+            "medium": "media/uploads/2026-11-12/0373c070-749b-404e-81b1-1f53e8d6cc32.webp",
+            "detail": "media/uploads/2026-11-12/0373c070-749b-404e-81b1-1f53e8d6cc32.webp",
+            "original": "media/uploads/2026-11-12/6261000c-104f-4d86-be87-bae1785cc0bd.jpg",
+            "srcset": "media/uploads/2026-11-12/ac30fc53-fbae-4852-82e5-15f40627e761.webp 640w, media/uploads/2026-11-12/0373c070-749b-404e-81b1-1f53e8d6cc32.webp 1080w",
+            "width": 1080,
+            "height": 2340
+          },
+          {
+            "src": "media/uploads/2026-11-12/cf878eaa-c713-45f2-b8a1-a4192cb5643b.webp",
+            "type": "image",
+            "alt": "HWsyocRbAAAG2-R.jpeg",
+            "thumb": "media/uploads/2026-11-12/97e4ff7b-719b-4794-bb31-27908502fc74.webp",
+            "medium": "media/uploads/2026-11-12/cf878eaa-c713-45f2-b8a1-a4192cb5643b.webp",
+            "detail": "media/uploads/2026-11-12/cf878eaa-c713-45f2-b8a1-a4192cb5643b.webp",
+            "original": "media/uploads/2026-11-12/ef357aca-d8a7-4cb7-84f0-d55fbd4536a7.jpg",
+            "srcset": "media/uploads/2026-11-12/97e4ff7b-719b-4794-bb31-27908502fc74.webp 640w, media/uploads/2026-11-12/cf878eaa-c713-45f2-b8a1-a4192cb5643b.webp 1080w",
+            "width": 1080,
+            "height": 2340
+          },
+          {
+            "src": "media/uploads/2026-11-12/80a7fc24-2497-4dc8-b7e4-27adb5aa7a71.webp",
+            "type": "image",
+            "alt": "HWsyo5wb0AArmjn.jpeg",
+            "thumb": "media/uploads/2026-11-12/61cf4a26-7d5c-4687-b5ce-7c72e5aef614.webp",
+            "medium": "media/uploads/2026-11-12/80a7fc24-2497-4dc8-b7e4-27adb5aa7a71.webp",
+            "detail": "media/uploads/2026-11-12/80a7fc24-2497-4dc8-b7e4-27adb5aa7a71.webp",
+            "original": "media/uploads/2026-11-12/1eaa297a-c470-474e-b702-3610a9391d12.jpg",
+            "srcset": "media/uploads/2026-11-12/61cf4a26-7d5c-4687-b5ce-7c72e5aef614.webp 640w, media/uploads/2026-11-12/80a7fc24-2497-4dc8-b7e4-27adb5aa7a71.webp 1080w",
+            "width": 1080,
+            "height": 2340
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "Lee Seo-eon",
+          "Naru"
+        ],
+        "colors": [
+          "#ffffff",
+          "#808080",
+          "#000000"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-12T19:26:51.350Z"
+    },
+    {
       "id": "f2fa00df-f2d3-4141-ade1-6589525dee6e",
       "status": "published",
       "payload": {
