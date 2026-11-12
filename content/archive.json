@@ -1,6 +1,99 @@
 {
   "posts": [
     {
+      "id": "02a5d963-a31f-494c-ae5a-5682b4f72d34",
+      "status": "published",
+      "payload": {
+        "id": "02a5d963-a31f-494c-ae5a-5682b4f72d34",
+        "date": "2026-11-11",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-12/1971fd54-191b-4702-b9b4-bf579deb1226.webp",
+            "type": "image",
+            "alt": "HWsW1E1aAAAGzLE.jpeg",
+            "thumb": "media/uploads/2026-11-12/31ec4bbd-6845-4b8a-9009-7448c2c9706b.webp",
+            "medium": "media/uploads/2026-11-12/1971fd54-191b-4702-b9b4-bf579deb1226.webp",
+            "detail": "media/uploads/2026-11-12/1971fd54-191b-4702-b9b4-bf579deb1226.webp",
+            "original": "media/uploads/2026-11-12/467133c3-e7d3-4223-878b-e8472bb83474.jpg",
+            "srcset": "media/uploads/2026-11-12/31ec4bbd-6845-4b8a-9009-7448c2c9706b.webp 640w, media/uploads/2026-11-12/1971fd54-191b-4702-b9b4-bf579deb1226.webp 2340w",
+            "width": 2340,
+            "height": 1080
+          },
+          {
+            "src": "media/uploads/2026-11-12/37559c27-4258-4697-b103-422f9327dbf3.webp",
+            "type": "image",
+            "alt": "HWsW_CCbIAADI8y.jpeg",
+            "thumb": "media/uploads/2026-11-12/14a3c9a4-77b8-4450-8571-188de0c947e8.webp",
+            "medium": "media/uploads/2026-11-12/37559c27-4258-4697-b103-422f9327dbf3.webp",
+            "detail": "media/uploads/2026-11-12/37559c27-4258-4697-b103-422f9327dbf3.webp",
+            "original": "media/uploads/2026-11-12/9ed757e4-481f-493a-afb9-38340c0f9115.jpg",
+            "srcset": "media/uploads/2026-11-12/14a3c9a4-77b8-4450-8571-188de0c947e8.webp 640w, media/uploads/2026-11-12/37559c27-4258-4697-b103-422f9327dbf3.webp 2340w",
+            "width": 2340,
+            "height": 1080
+          },
+          {
+            "src": "media/uploads/2026-11-12/0b4fd186-ab73-4c9b-bc6e-f3ca2995f1c7.webp",
+            "type": "image",
+            "alt": "HWsW-smawAE-xAk.jpeg",
+            "thumb": "media/uploads/2026-11-12/92cc01b6-880e-42b8-a751-0a448810cd9b.webp",
+            "medium": "media/uploads/2026-11-12/0b4fd186-ab73-4c9b-bc6e-f3ca2995f1c7.webp",
+            "detail": "media/uploads/2026-11-12/0b4fd186-ab73-4c9b-bc6e-f3ca2995f1c7.webp",
+            "original": "media/uploads/2026-11-12/5efe0079-36a0-49b9-b7f5-b1c0f62b23f3.jpg",
+            "srcset": "media/uploads/2026-11-12/92cc01b6-880e-42b8-a751-0a448810cd9b.webp 640w, media/uploads/2026-11-12/0b4fd186-ab73-4c9b-bc6e-f3ca2995f1c7.webp 2340w",
+            "width": 2340,
+            "height": 1080
+          },
+          {
+            "src": "media/uploads/2026-11-12/a1edf6f2-0d49-4bf5-9bb3-a887f9d38310.webp",
+            "type": "image",
+            "alt": "HWsW2WLbQAA4hXr.jpeg",
+            "thumb": "media/uploads/2026-11-12/919f29bf-86f7-4aa4-8e49-bca5f453b2d9.webp",
+            "medium": "media/uploads/2026-11-12/a1edf6f2-0d49-4bf5-9bb3-a887f9d38310.webp",
+            "detail": "media/uploads/2026-11-12/a1edf6f2-0d49-4bf5-9bb3-a887f9d38310.webp",
+            "original": "media/uploads/2026-11-12/cc646898-3fd1-4f4d-92e4-b030cef06f6b.jpg",
+            "srcset": "media/uploads/2026-11-12/919f29bf-86f7-4aa4-8e49-bca5f453b2d9.webp 640w, media/uploads/2026-11-12/a1edf6f2-0d49-4bf5-9bb3-a887f9d38310.webp 2340w",
+            "width": 2340,
+            "height": 1080
+          },
+          {
+            "src": "media/uploads/2026-11-12/0392815a-9371-4a4e-b03c-763133a75af7.webp",
+            "type": "image",
+            "alt": "HWsW17laoAAKHaO.jpeg",
+            "thumb": "media/uploads/2026-11-12/105e81e4-a76a-45f8-94d7-8281d828f873.webp",
+            "medium": "media/uploads/2026-11-12/0392815a-9371-4a4e-b03c-763133a75af7.webp",
+            "detail": "media/uploads/2026-11-12/0392815a-9371-4a4e-b03c-763133a75af7.webp",
+            "original": "media/uploads/2026-11-12/731e55d1-aa2c-48a0-a376-f433af82b4de.jpg",
+            "srcset": "media/uploads/2026-11-12/105e81e4-a76a-45f8-94d7-8281d828f873.webp 640w, media/uploads/2026-11-12/0392815a-9371-4a4e-b03c-763133a75af7.webp 2340w",
+            "width": 2340,
+            "height": 1080
+          },
+          {
+            "src": "media/uploads/2026-11-12/2b78feef-cdff-4724-9019-34ea81939571.webp",
+            "type": "image",
+            "alt": "HWsW1embQAAIr7z.jpeg",
+            "thumb": "media/uploads/2026-11-12/4eaf4db9-68f9-42dd-9896-426271e0bb42.webp",
+            "medium": "media/uploads/2026-11-12/2b78feef-cdff-4724-9019-34ea81939571.webp",
+            "detail": "media/uploads/2026-11-12/2b78feef-cdff-4724-9019-34ea81939571.webp",
+            "original": "media/uploads/2026-11-12/97f8629e-72af-4a32-90eb-d66da6abf5e3.jpg",
+            "srcset": "media/uploads/2026-11-12/4eaf4db9-68f9-42dd-9896-426271e0bb42.webp 640w, media/uploads/2026-11-12/2b78feef-cdff-4724-9019-34ea81939571.webp 2340w",
+            "width": 2340,
+            "height": 1080
+          }
+        ],
+        "genre": "LDS",
+        "other": [
+          "Lee Seo-eon"
+        ],
+        "colors": [
+          "#f28c28",
+          "#000000"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-12T19:28:37.310Z"
+    },
+    {
       "id": "13dba75a-5c31-46fe-b696-f8a8309791ec",
       "status": "published",
       "payload": {
