@@ -1,6 +1,52 @@
 {
   "posts": [
     {
+      "id": "7733756c-ffed-4090-9b6b-5597118053ec",
+      "status": "published",
+      "payload": {
+        "id": "7733756c-ffed-4090-9b6b-5597118053ec",
+        "date": "2026-11-12",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-12/6f69a19e-b1af-41b2-99a1-43ae8ff4af56.webp",
+            "type": "image",
+            "alt": "HW5rq3ZagAALR6f.jpeg",
+            "thumb": "media/uploads/2026-11-12/fd9d844d-91d0-4904-9068-c44c765878b8.webp",
+            "medium": "media/uploads/2026-11-12/6f69a19e-b1af-41b2-99a1-43ae8ff4af56.webp",
+            "detail": "media/uploads/2026-11-12/6f69a19e-b1af-41b2-99a1-43ae8ff4af56.webp",
+            "original": "media/uploads/2026-11-12/a30d368d-6cfb-4f9b-aea9-225e1c609941.jpg",
+            "srcset": "media/uploads/2026-11-12/fd9d844d-91d0-4904-9068-c44c765878b8.webp 640w, media/uploads/2026-11-12/6f69a19e-b1af-41b2-99a1-43ae8ff4af56.webp 2400w",
+            "width": 2400,
+            "height": 2400
+          },
+          {
+            "src": "media/uploads/2026-11-12/cb884bd2-6fcd-4f2b-b3a6-5fd3fcaf54b0.webp",
+            "type": "image",
+            "alt": "HW7B7cIagAA4GNh.jpeg",
+            "thumb": "media/uploads/2026-11-12/5e478977-4281-4f20-83d0-3a1e2a27fb66.webp",
+            "medium": "media/uploads/2026-11-12/cb884bd2-6fcd-4f2b-b3a6-5fd3fcaf54b0.webp",
+            "detail": "media/uploads/2026-11-12/cb884bd2-6fcd-4f2b-b3a6-5fd3fcaf54b0.webp",
+            "original": "media/uploads/2026-11-12/bcfe83e7-79ff-4850-8370-4b67f3472bb1.jpg",
+            "srcset": "media/uploads/2026-11-12/5e478977-4281-4f20-83d0-3a1e2a27fb66.webp 640w, media/uploads/2026-11-12/cb884bd2-6fcd-4f2b-b3a6-5fd3fcaf54b0.webp 2400w",
+            "width": 2400,
+            "height": 3199
+          }
+        ],
+        "genre": "PHOTO",
+        "other": [
+          "Lee Seo-eon"
+        ],
+        "colors": [
+          "#3b9b59",
+          "#ffffff",
+          "#e63838"
+        ],
+        "thxTo": "",
+        "thxUrl": ""
+      },
+      "updated_at": "2026-11-12T19:37:24.157Z"
+    },
+    {
       "id": "52cf5fa9-0440-4845-b360-ab07678caf2d",
       "status": "published",
       "payload": {
