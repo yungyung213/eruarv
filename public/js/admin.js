@@ -1,6 +1,6 @@
 import {palette,paletteLabel} from './palette.js';
 import {imageAssets} from './image-assets.js';
-import {githubConnection, maxUploadBytes, uploadPath} from './github-api.mjs';
+import {adminConnection, signIn, maxUploadBytes, uploadPath} from './admin-auth.mjs';
 import {photos as seedPosts} from './photos.js';
 import {mainMedia as seedMain} from './site-config.js';
 const $=selector=>document.querySelector(selector),status=$('#admin-status');
@@ -15,11 +15,14 @@ function changed(){dirty=true;$('#editor-save-state').textContent='';$('#main-sa
 function canSave(){return !!connection;}
 function disable(){for(const el of document.querySelectorAll('#publish,#save-draft,#save-main,#seed,#post-files,#main-files,[data-server-action]'))el.disabled=!canSave()||busy;$('#login-button').disabled=busy;}
 async function api(name,input){
- if(!connection || name!=='admin-data')throw new Error('GitHub에 연결하세요.');
+ if(!connection || name!=='admin-data')throw new Error('어드민에 로그인하세요.');
  const result = input
   ? await connection.saveArchive(input,revision,pendingUploads)
   : await connection.readArchive();
  revision=result.revision;
+ for(const [local, remote] of result.savedReplacements || []){
+  if(previewURLs.has(local))previewURLs.set(remote,previewURLs.get(local));
+ }
  for(const path of result.savedPaths || [])pendingUploads.delete(path);
  return result;
 }
@@ -129,14 +132,13 @@ function collect(){const f=$('#post-form').elements;return {id:f.id.value,date:f
 function renderAppearance(){for(const el of document.querySelectorAll('[data-theme]'))el.setAttribute('aria-pressed',String(el.dataset.theme===appearance.theme));for(const el of document.querySelectorAll('[data-particles]'))el.setAttribute('aria-pressed',String((el.dataset.particles==='true')===appearance.particles));}
 async function load(){const data=await api('admin-data');syncResult(data);mainMedia=structuredClone(settings.mainMedia||seedMain);appearance={theme:settings.appearance?.theme||'dark',particles:settings.appearance?.particles??true};list();renderMedia('main');renderAppearance();renderPickers();$('#seed').hidden=!!settings.initialized;}
 function workspace(){document.body.classList.add('is-authenticated');$('#login-panel').hidden=true;$('#workspace').hidden=false;if(editorMode)$('#post-form').hidden=false;disable();}
-async function save(publish){if(!canSave())return;await task(async()=>{syncResult(await api('admin-data',{action:'save-post',post:collect(),status:publish?'published':'draft'}));dirty=false;tell(publish?'GitHub에 저장했습니다. Pages 배포가 끝나면 홈페이지에 반영됩니다.':'GitHub에 임시 저장했습니다.');$('#post-state').textContent=publish?'공개':'임시 저장';$('#editor-save-state').textContent='';window.opener?.postMessage({type:'eru-post-saved'},location.origin);});}
+async function save(publish){if(!canSave())return;await task(async()=>{syncResult(await api('admin-data',{action:'save-post',post:collect(),status:publish?'published':'draft'}));postMedia=structuredClone(rows.find(row=>row.id===$('#post-form').elements.id.value).payload.images);renderMedia('post');dirty=false;tell(publish?'GitHub에 저장했습니다. Pages 배포가 끝나면 홈페이지에 반영됩니다.':'GitHub에 임시 저장했습니다.');$('#post-state').textContent=publish?'공개':'임시 저장';$('#editor-save-state').textContent='';window.opener?.postMessage({type:'eru-post-saved'},location.origin);});}
 $('#post-form').onsubmit=event=>{event.preventDefault();save(true);};$('#save-draft').onclick=()=>save(false);$('#new-post').onclick=()=>launchEditor();
 $('#seed').onclick=()=>task(async()=>{await api('admin-data',{action:'seed',posts:seedPosts,media:seedMain});await load();});
-$('#save-main').onclick=()=>task(async()=>{syncResult(await api('admin-data',{action:'save-main',media:mainMedia,appearance}));dirty=false;$('#main-save-state').textContent='Pages 배포 후 반영됩니다.';});
+$('#save-main').onclick=()=>task(async()=>{syncResult(await api('admin-data',{action:'save-main',media:mainMedia,appearance}));mainMedia=structuredClone(settings.mainMedia);renderMedia('main');dirty=false;$('#main-save-state').textContent='Pages 배포 후 반영됩니다.';});
 for(const el of document.querySelectorAll('[data-theme]'))el.onclick=()=>{appearance.theme=el.dataset.theme;renderAppearance();changed();};for(const el of document.querySelectorAll('[data-particles]'))el.onclick=()=>{appearance.particles=el.dataset.particles==='true';renderAppearance();changed();};
 async function connect(token){
- const candidate=githubConnection(token);
- await candidate.verify();
+ const candidate=adminConnection(token);
  connection=candidate;
  try{
   await load();
@@ -152,10 +154,14 @@ async function connect(token){
 }
 $('#login-form').onsubmit=event=>{
  event.preventDefault();
- const field=event.target.elements.token;
- const token=field.value.trim();
- field.value='';
- task(()=>connect(token));
+ const fields=event.target.elements;
+ const username=fields.username.value.trim();
+ const password=fields.password.value;
+ task(async()=>{
+  const accessToken=await signIn(username,password);
+  fields.password.value='';
+  await connect(accessToken);
+ });
 };
 function logout(){
  for(const child of editors)child.postMessage({type:'eru-logout'},location.origin);
