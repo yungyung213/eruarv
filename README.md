@@ -1,62 +1,21 @@
-# ERU Archive — GitHub V16
+# ERU Archive · GitHub Pages
 
-현재 방식: Supabase 관리자 로그인 + GitHub eruarv 게시물/파일 저장 + Netlify Git 자동 배포입니다. Cloudflare/R2는 필요하지 않습니다. 최신 안내는 **GITHUB-SETUP-KO.md**를 참고하세요. 아래 V15 이하 내용과 SETUP-KO.md의 R2 안내는 이전 버전 기록입니다.
+`yungyung213/eruarv`의 `main`을 기준으로 홈페이지와 어드민을 함께 배포합니다. 이 묶음에는 기준 커밋 `1dd7001`의 게시물 9개와 업로드 미디어가 포함되어 있습니다.
 
-- O GitHub 서버 API, 서명된 업로드 준비 정보, 파일과 콘텐츠 단일 커밋
-- O 강제 푸시 금지, 동시 저장 충돌 안내, GitHub 토큰 서버 전용
-- O 게시된 글만 공개 JSON에 출력, 기존 Supabase 로그인 유지
-- O 정지 이미지 자동 최적화. GIF/MP4/WebM은 파일당 4MB 이하
-- X 실제 저장소 연결/실업로드 검증/배포
-- X 노이즈 ON/OFF와 블로그형 추가 개편
+## 처음 한 번만 설정하기
 
-V16 주의: 원본 사진이 4MB를 넘으면 원본은 저장하지 않고 최적화본만 보관합니다. GitHub 저장 후 Netlify 배포가 끝나야 홈페이지에 반영됩니다. 사용량/빌드 한도는 서비스별로 적용됩니다.
+1. **첫 Push 전에** Netlify의 **Project configuration → Developer settings → Continuous deployment → Repository → Manage repository → Unlink the current repository**에서 연결을 끊습니다. 그러면 이전 커밋과 이후 게시물 저장이 Netlify 배포를 시작하지 않습니다. [Netlify 저장소 연결 해제 안내](https://docs.netlify.com/build/git-workflows/repo-permissions-linking/#unlink-a-git-repository)
+2. GitHub Desktop으로 기존 `yungyung213/eruarv` 저장소를 복제하거나, 이미 복제했다면 `main`에서 **Pull origin**을 실행합니다. 압축을 푼 폴더 **안의** 파일을 저장소 최상단에 복사합니다. macOS Finder에서 **⌘⇧.**을 누르면 자동 배포 파일이 들어 있는 숨김 폴더 `.github`가 보입니다. 최근 추가한 게시물이 있으면 복제한 저장소의 `content/`와 `public/media/`를 유지하세요. 그 외 기존 Netlify용 `netlify/`, `netlify.toml`, `server/`, `setup/`, `src/`, `test/`, `package-lock.json`, `GITHUB-SETUP-KO.md`, `SETUP-KO.md`, `PLANNED-CHANGES.md`는 이번 버전에서 제거할 수 있습니다. 저장소의 숨김 폴더 `.git`은 그대로 둡니다.
+3. GitHub 저장소 **Settings → Pages → Build and deployment → Source → GitHub Actions**를 선택합니다. 저장소에 복사한 변경사항을 GitHub Desktop에서 **Commit to main → Push origin**으로 올립니다. [GitHub Pages 배포 방식 설정 안내](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+4. 저장소 **Actions → Publish ERU Archive**에서 성공 여부를 확인합니다. Push 전에 Pages를 설정하지 않았다면 설정을 마치고 **Run workflow**를 한 번 누릅니다.
 
-## 이전 버전 기록
+## 사이트와 어드민 사용하기
 
-이 ZIP은 **서버 포함 소스 프로젝트**입니다. 정적 폴더 드래그 업로드용이 아닙니다.
-SETUP-KO.md에 계정 연결 방법, .env.example에 환경변수 이름, setup/schema.sql에 테이블 SQL이 있습니다.
+- 홈페이지는 [GitHub Pages](https://yungyung213.github.io/eruarv/)에 열립니다.
+- 게시물 관리는 [어드민](https://yungyung213.github.io/eruarv/admin.html)에서 합니다.
+- GitHub의 **Fine-grained personal access tokens**에서 `eruarv`만 선택하고 저장소 **Contents → Read and write**를 부여한 토큰을 어드민의 **GitHub token**에 붙여넣고 **Connect**를 누릅니다. 기존에 보관한 유효한 토큰에 같은 권한이 있다면 그대로 사용할 수 있습니다. 어드민용 토큰은 게시물 저장에만 필요합니다. [GitHub 토큰 안내](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
+- 토큰은 브라우저 메모리에만 남습니다. 새로고침하거나 창을 닫으면 다시 연결합니다. 토큰 값을 저장소 파일에 넣거나 채팅으로 보내지 마세요.
+- 사진과 글을 저장하면 한 커밋으로 올라갑니다. GitHub Actions 배포가 끝난 뒤 홈페이지를 새로고침하면 새 게시물이 보입니다. 저장 이후의 배포 상태는 저장소 **Actions**에서 확인할 수 있습니다.
+- 임시 저장과 비공개는 홈페이지 목록에서 글을 숨깁니다. 공개 GitHub 저장소의 파일과 이력에서는 글이나 사진을 볼 수 있으므로 민감한 자료는 올리지 마세요.
 
-- O 로그인 화면 / 인증 연결 코드 / 관리자 전용 저장 API / DB 접근 정책
-- O R2 서명 업로드 / 정지 이미지 최적화 / GIF·동영상 원본 업로드 코드
-- O 게시물 편집 / 미디어 순서 / 임시 저장·게시 / 메인 슬라이드 관리
-- O 기존 데이터 이관 / 공개 사이트 데이터 연결
-- O PC·모바일 미리보기 / 테스트 5개 / 빌드
-- X 실제 Supabase·R2 계정 생성·연결·실환경 검증
-- X Netlify 실배포
-
-npm ci → npm test → npm run build
-
-Netlify 설정은 netlify.toml에 있습니다. 어드민 주소는 /admin.html입니다.
-서비스 연결 전에는 미리보기만 사용하고 실제 저장/업로드는 비활성입니다.
-
-## V11 개편
-- 게시물 목록과 업로드/편집 창 분리: admin-editor.html
-- 게시물 업로드 버튼 및 기존 게시물 클릭 시 별도 창 열기
-- 저장 후 원래 목록 창에 갱신 알림 전달
-- 모든 버튼의 사각 테두리/채움 제거. 텍스트·아이콘 버튼과 밑줄 입력란 사용
-- 파일 선택 기본 버튼까지 같은 스타일 적용
-
-## V12
-- 갤러리 팔레트 길이/두께 절반: PC 27px, 모바일 22px, 두께 1.5px
-- 어드민 카테고리/캐릭터 기존 값 자동 선택 및 목록 첫 항목 + 새로 만들기
-- 새 구분값 서버 저장, 기존 사용 값과 합쳐 불러오기. 크레딧 자동완성
-- 팔레트 선택/갤러리 필터는 빨주노초파남보흰회 9색 고정
-- 기존 검정 및 기타 기존 색은 우선 보존, 신규 선택에는 제공하지 않음
-- 테스트 6개 및 빌드 통과, 실제 저장소 연결은 미완료
-
-## V13
-- 사용자 확정: 검정 추가, 고정 팔레트 총 10색
-- 어드민 선택과 갤러리 필터에 검정 제공, 기존 검정도 일반 색상으로 처리
-
-## V14
-- 갤러리 목록/상세 팔레트 실제 표시 높이 0.5px로 확인
-- 메인 배경 사진 흑백, 기존 자동 전환 유지
-- collected moments / kept here / 01 ongoing은 기존 회색 #777674
-- CSS 버전 v14로 갱신
-
-## V15
-- 홈페이지: 현재 보관한 입자 효과 반영. 입자 수 감소, 밝기 감소, 윤곽 흐림, 2초 교차 전환.
-- 메인 배경 #141414, 공통 텍스트 그리드, 메인 하단 화살표 제거.
-- 기존 공유 페이지 전환/음악 플레이어/갤러리 기능 유지.
-- 블로그처럼 쉬운 관리 화면과 노이즈 ON/OFF는 PLANNED-CHANGES.md에 기록, 아직 미구현.
-- 서비스 계정 미연결, 실제 업로드 검증과 배포는 하지 않음.
+로컬 빌드는 Node.js 22 이상에서 `npm run build`를 실행합니다. 배포할 파일은 `dist/`에 생성됩니다.

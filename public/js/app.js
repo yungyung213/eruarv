@@ -1,6 +1,12 @@
 import {stopVideos} from './media.js';
-// Netlify Pretty URLs can serve gallery.html as /gallery and index.html as /.
+import {siteSettings} from './content-data.js';
+const appearance=siteSettings.appearance||{};
+document.documentElement.dataset.theme=appearance.theme==='light'?'light':'dark';
+document.body.dataset.mainEffect=appearance.particles===false?'media':'particles';
+const siteRoot = new URL('../', import.meta.url);
 function pageForPath(path){
+ if(!path.startsWith(siteRoot.pathname))return null;
+ path='/'+path.slice(siteRoot.pathname.length);
  if(/^\/gallery(?:\.html)?\/?$/.test(path))return 'gallery';
  if(/^\/(?:index\.html)?$/.test(path))return 'main';
  return null;
@@ -11,12 +17,12 @@ const initialPage=initialMain.classList.contains('gallery-main')?'gallery':'main
 initialMain.dataset.page=initialPage;
 await import('./music.js');
 try{
- const response=await fetch(initialPage==='gallery'?'/index.html':'/gallery.html');if(!response.ok)throw new Error('Page load failed');
+ const response=await fetch(new URL(initialPage==='gallery'?'index.html':'gallery.html',siteRoot));if(!response.ok)throw new Error('Page load failed');
  const parsed=new DOMParser().parseFromString(await response.text(),'text/html');
  const other=parsed.querySelector('main');if(!other)throw new Error('Companion page missing');
  other.dataset.page=initialPage==='gallery'?'main':'gallery';other.hidden=true;shell.before(other);
  const dialog=parsed.querySelector('#detail');if(dialog&&!document.querySelector('#detail'))shell.before(dialog);
- await import('./main.js');await import('./gallery.js');
+
  const pages=[...document.querySelectorAll('main[data-page]')];
  function route(){
   const page=pageForPath(location.pathname)||initialPage,gallery=page==='gallery';
@@ -31,7 +37,9 @@ try{
   event.preventDefault();if(location.pathname!==url.pathname||location.search!==url.search)history.pushState(null,'',url.pathname+url.search+url.hash);route();window.scrollTo({top:0,behavior:'instant'});
  });
  window.addEventListener('popstate',route);route();
+ await import('./gallery.js');
+ import('./main.js').catch(error=>console.error('Main media unavailable:',error));
 }catch(error){
- const script=document.createElement('script');script.type='module';script.src=initialPage==='gallery'?'/js/gallery.js':'/js/main.js';document.body.append(script);
+ const script=document.createElement('script');script.type='module';script.src=new URL(initialPage==='gallery'?'./gallery.js':'./main.js',import.meta.url);document.body.append(script);
  console.error('Shared page navigation unavailable:',error);
 }

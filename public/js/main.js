@@ -1,7 +1,7 @@
 import {imageAssets} from './image-assets.js';
 import {mainMedia,mainSlideInterval} from './content-data.js';
 import {createMedia,stopVideos} from './media.js';
-if(document.querySelector('[data-main-effect]')?.dataset.mainEffect==='particles'){
+if(document.querySelector('[data-main-effect]')?.dataset.mainEffect==='particles'&&mainMedia.length>0&&mainMedia.every(item=>item.type!=='video'&&!/\.gif(?:[?#]|$)/i.test(item.src))){
  await import('./particle-page.js');
 }else{
 const target=document.querySelector('#hero-media');let index=0,request=0;

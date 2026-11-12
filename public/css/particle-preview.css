@@ -30,3 +30,8 @@
 
 /* Soften individual specks without blurring typography or navigation. */
 .particle-canvas{filter:blur(.65px);opacity:.85}
+
+/* V18: use the same page surface and footer in both themes and routes. */
+.home-page .hero-media-wrap::after{background:linear-gradient(to top,rgba(var(--bg-rgb),1),rgba(var(--bg-rgb),0) 32%,rgba(var(--bg-rgb),.12))}
+.home-page .hero-bottom>a{grid-column:5/9;justify-self:center}
+@media(max-width:700px){.home-page .hero-bottom>a{grid-column:1/-1;justify-self:center}}

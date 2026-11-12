@@ -1,11 +1,11 @@
-import {publicContent} from './server/publication.mjs';
-import {cp,rm,readFile,writeFile} from 'node:fs/promises';
-import {build} from 'esbuild';
-await rm('dist',{recursive:true,force:true});await cp('public','dist',{recursive:true});
-await build({entryPoints:['src/admin.js'],outfile:'dist/js/admin.js',bundle:true,format:'esm',target:['es2022'],minify:true});
+import {cp, readFile, rm, writeFile} from 'node:fs/promises';
+import {publicContent} from './public/js/publication.mjs';
 
-let archive;
-try{archive=JSON.parse(await readFile('content/archive.json','utf8'));}catch(error){if(error.code!=='ENOENT')throw error;}
-if(archive){
- await writeFile('dist/content.json',JSON.stringify(publicContent(archive)));
-}else await writeFile('dist/content.json',JSON.stringify({configured:false}));
+const archive = JSON.parse(await readFile(new URL('./content/archive.json', import.meta.url), 'utf8'));
+const payload = publicContent(archive);
+const dist = new URL('./dist/', import.meta.url);
+await rm(dist, {recursive: true, force: true});
+await cp(new URL('./public/', import.meta.url), dist, {recursive: true});
+await writeFile(new URL('content.json', dist), JSON.stringify(payload));
+await writeFile(new URL('.nojekyll', dist), '');
+console.log(`Built ERU Archive with ${payload.posts?.length ?? 0} published posts.`);

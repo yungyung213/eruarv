@@ -21,3 +21,12 @@ main[data-page][hidden]{display:none!important}.footer-shell{position:fixed;inse
 /* Inline music controls replace the footer's left-hand caption. */
 .footer-shell footer{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;min-height:48px;padding:4px 0}.footer-shell footer>a{justify-self:end}.footer-shell footer>.music-bar{justify-self:start;display:flex;justify-content:flex-start;padding:0;gap:4px;min-height:36px}.footer-shell::before{inset:-145px 0 0}.music-title{display:none}
 @media(max-width:600px){.footer-shell footer{font-size:9px;gap:6px}.footer-shell footer>.music-bar{gap:0}.footer-shell .music-bar button{min-width:32px}}
+
+/* V18: the theme changes surfaces only; photo and video colors are preserved. */
+:root{--bg-rgb:20,20,20}
+:root[data-theme=light]{color-scheme:light;--bg:#ebebeb;--bg-rgb:235,235,235;--text:#626260;--line:#d1d1d1}
+.footer-shell::before{display:block!important;background:linear-gradient(to top,rgba(var(--bg-rgb),.96),rgba(var(--bg-rgb),.75) 35%,rgba(var(--bg-rgb),0))}
+.footer-shell footer>.admin-entry{grid-column:2;justify-self:center;white-space:nowrap}
+.footer-shell footer>a:not(.admin-entry){grid-column:3;justify-self:end}
+
+.home-page .footer-shell footer>.admin-entry{grid-column:2;justify-self:center}
