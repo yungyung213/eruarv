@@ -5,7 +5,7 @@
       "status": "published",
       "payload": {
         "id": "5a92a9fc-20d5-4810-b042-2df575aebd18",
-        "date": "2026-11-13",
+        "date": "2026-11-14",
         "images": [
           {
             "src": "media/uploads/2026-11-13/aaf75dbc-bebf-4ec3-9260-7db609ef497b.webp",
@@ -18,29 +18,19 @@
             "srcset": "media/uploads/2026-11-13/ffbffa8e-1d01-4d87-bf00-25770f320c76.webp 640w, media/uploads/2026-11-13/aaf75dbc-bebf-4ec3-9260-7db609ef497b.webp 1000w",
             "width": 1000,
             "height": 1354
-          },
-          {
-            "src": "media/uploads/2026-11-13/cfeb4579-6ed1-4feb-94e3-77d1ebad7913.webp",
-            "type": "image",
-            "alt": "HW7Au-AbkAAAhoJ.jpeg",
-            "thumb": "media/uploads/2026-11-13/91dbb32e-58a0-4043-9a5f-e6b6ff207913.webp",
-            "medium": "media/uploads/2026-11-13/cfeb4579-6ed1-4feb-94e3-77d1ebad7913.webp",
-            "detail": "media/uploads/2026-11-13/cfeb4579-6ed1-4feb-94e3-77d1ebad7913.webp",
-            "original": "media/uploads/2026-11-13/2836cb9f-0e16-45c3-8920-ec61b49bc9f2.jpg",
-            "srcset": "media/uploads/2026-11-13/91dbb32e-58a0-4043-9a5f-e6b6ff207913.webp 640w, media/uploads/2026-11-13/cfeb4579-6ed1-4feb-94e3-77d1ebad7913.webp 1000w",
-            "width": 1000,
-            "height": 2144
           }
         ],
         "genre": "TEXT",
         "other": [
           "Naru"
         ],
-        "colors": [],
+        "colors": [
+          "#3379d5"
+        ],
         "thxTo": "",
         "thxUrl": ""
       },
-      "updated_at": "2026-11-13T08:21:31.187Z"
+      "updated_at": "2026-11-13T08:24:26.278Z"
     },
     {
       "id": "dbe30ad9-db42-4b2b-a3b6-440a5777e834",
