@@ -37,9 +37,9 @@ try{
   event.preventDefault();if(location.pathname!==url.pathname||location.search!==url.search)history.pushState(null,'',url.pathname+url.search+url.hash);route();window.scrollTo({top:0,behavior:'instant'});
  });
  window.addEventListener('popstate',route);route();
- await import('./gallery.js?v=27');
- import('./main.js?v=27').catch(error=>console.error('Main media unavailable:',error));
+ await import('./gallery.js?v=31');
+ import('./main.js?v=31').catch(error=>console.error('Main media unavailable:',error));
 }catch(error){
- const script=document.createElement('script');script.type='module';script.src=new URL(initialPage==='gallery'?'./gallery.js?v=27':'./main.js?v=27',import.meta.url);document.body.append(script);
+ const script=document.createElement('script');script.type='module';script.src=new URL(initialPage==='gallery'?'./gallery.js?v=31':'./main.js?v=31',import.meta.url);document.body.append(script);
  console.error('Shared page navigation unavailable:',error);
 }
