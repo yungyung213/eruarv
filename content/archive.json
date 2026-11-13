@@ -6,8 +6,8 @@
       "payload": {
         "id": "5a92a9fc-20d5-4810-b042-2df575aebd18",
         "date": "2026-11-14",
-        "title": "ttt",
-        "body": "ttt",
+        "title": "What will become when the snow melts?",
+        "body": "What will become when the snow melts?\n\n눈이 녹으면 뭐가 되지?\n봄이 오죠.",
         "images": [
           {
             "src": "media/uploads/2026-11-13/1dc7365a-b545-4946-9bf9-a72a9a46cd3a.webp",
@@ -37,7 +37,7 @@
         "thxUrl": ""
       },
       "created_at": "2026-11-13T18:33:33.017Z",
-      "updated_at": "2026-11-13T18:41:50.367Z"
+      "updated_at": "2026-11-13T18:42:34.732Z"
     },
     {
       "id": "dbe30ad9-db42-4b2b-a3b6-440a5777e834",
