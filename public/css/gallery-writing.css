@@ -82,7 +82,7 @@
 }
 
 .detail-writing {
-  width: min(100%, 66ch);
+  width: min(100%, var(--detail-media-width, 66ch));
   margin: 0 auto;
   padding-block: clamp(8px, 3vw, 36px) 2rem;
   overflow-wrap: anywhere;
@@ -92,12 +92,6 @@
   margin: 0 0 1.5rem;
   font-size: clamp(1.35rem, 3vw, 2.25rem);
   line-height: 1.25;
-}
-
-#detail-photo-title {
-  margin: 0 0 1rem;
-  font-size: 1.15rem;
-  overflow-wrap: anywhere;
 }
 
 #detail-body p {
@@ -206,6 +200,7 @@ body {
 }
 
 #detail-body {
+  max-width: 66ch;
   color: light-dark(#333, #d2d2d2);
 }
 

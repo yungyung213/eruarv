@@ -46,6 +46,8 @@ function storeSession(token){
 }
 let connection, rows=[],settings={},postMedia=[],mainMedia=[],busy=false,dirty=false,revision='';
 let activePanel='posts';
+let supportsWriting=false;
+let supportsTitleOnly=false;
 let appearance=normalizeAppearance();
 const columnFilters=[...document.querySelectorAll('[data-column-filter]')];
 const activeFilters={category:new Set(),character:new Set(),status:new Set()};
@@ -158,6 +160,10 @@ async function api(name,input){
   ? await connection.saveArchive(input,revision,pendingUploads)
   : await connection.readArchive();
  revision=result.revision;
+ if(!input){
+  supportsWriting=result.supportsWriting===true;
+  supportsTitleOnly=result.supportsTitleOnly===true;
+ }
  for(const [local, remote] of result.savedReplacements || []){
   if(previewURLs.has(local))previewURLs.set(remote,previewURLs.get(local));
  }
@@ -578,10 +584,7 @@ function renderPickers(){
    tag.classList.add('selection-remove');
    const name=document.createElement('bdi');
    name.textContent=value;
-   if(group==='genre'){
-    tag.classList.add('category-chip');
-    if(/[a-z]/i.test(value)&&!/[\p{Script=Hangul}]/u.test(value))name.lang='en';
-   }
+   if(/[a-z]/i.test(value)&&!/[\p{Script=Hangul}]/u.test(value))name.lang='en';
    tag.prepend(name);
    tags.append(tag);
   }
@@ -613,12 +616,16 @@ async function save(publish){
  feedback.dataset.error='true';
  const post=collect();
  const state=publish?$('#post-form').elements.visibility.value:'draft';
- if(publish&&!post.images.length&&(!post.title||!post.body)){
-  feedback.textContent='미디어 없이 게시하려면 제목과 본문을 입력하세요.';
+ if(publish&&!post.images.length&&!post.title){
+  feedback.textContent='미디어 없이 게시하려면 제목을 입력하세요.';
   return;
  }
- if(publish&&post.categories.some(value=>value.toUpperCase()==='TEXT')&&!post.body){
-  feedback.textContent='TEXT 카테고리로 게시하려면 Text에 본문을 입력하세요.';
+ if(publish&&!post.images.length&&!post.body&&!supportsTitleOnly){
+  feedback.textContent='제목만 게시하려면 Supabase에서 eru-admin 코드를 V40으로 업데이트한 뒤 다시 로그인하세요.';
+  return;
+ }
+ if(!supportsWriting&&(post.title||post.body||post.categories.length>1)){
+  feedback.textContent='글 저장을 켜려면 Supabase에서 eru-admin의 코드를 업데이트한 뒤 다시 로그인하세요.';
   return;
  }
  const editorTitle=$('#workspace-title').textContent;
@@ -640,7 +647,7 @@ async function save(publish){
    if(!savedPost)throw new Error('저장된 게시물을 확인하지 못했습니다.');
    postMedia=structuredClone(savedPost.images);
    if((savedPost.title||'')!==post.title||(savedPost.body||'')!==post.body||JSON.stringify(postCategories(savedPost))!==JSON.stringify(post.categories)){
-    throw new Error('게시물은 저장됐지만 제목, 본문 또는 카테고리 일부가 반영되지 않았습니다. Supabase의 eru-admin 코드가 최신인지 확인한 뒤 이 게시물을 다시 저장하세요.');
+    throw new Error('제목, 본문 또는 카테고리가 저장 결과와 달라요. 작성 내용은 이 화면에 남아 있어요.');
    }
    dirty=false;
    const message=state==='published'?'게시 완료':state==='private'?'비공개 저장 완료':'임시 저장 완료';

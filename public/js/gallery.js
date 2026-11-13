@@ -23,6 +23,17 @@ const photoViewport=document.querySelector('.detail-photo');
 const img=document.querySelector('#detail-image');
 const status=document.querySelector('#image-status');
 const originalLink=document.querySelector('#view-original');
+const writing=detail.querySelector('.detail-writing');
+const video=document.querySelector('#detail-video');
+const mediaWidth=new ResizeObserver(entries=>{
+ for(const {target,contentRect} of entries){
+  if(!target.hidden&&contentRect.width>0){
+   writing.style.setProperty('--detail-media-width',contentRect.width+'px');
+  }
+ }
+});
+mediaWidth.observe(img);
+mediaWidth.observe(video);
 detail.addEventListener('click',event=>{
  const link=event.target.closest('.original-link');
  if(!link||event.metaKey||event.ctrlKey||event.shiftKey||event.altKey)return;
@@ -31,9 +42,6 @@ detail.addEventListener('click',event=>{
 });
 let renderedCount=0;
 
-function isArticle(post){
- return Boolean(post.body?.trim());
-}
 const colorLabels=Object.fromEntries(palette.map(item=>[item.color,item.name]));colorLabels['#000000']='검정';
 function appendChips(target,colors){
  if(target.id==='detail-palette'||target.classList.contains('palette-chips')){
@@ -61,24 +69,19 @@ function getOriginalSource(image){
 }
 
 function renderWriting(post){
- const writing=detail.querySelector('.detail-writing');
- const article=isArticle(post);
  const title=document.querySelector('#detail-title');
- const photoTitle=document.querySelector('#detail-photo-title');
  const body=document.querySelector('#detail-body');
- writing.hidden=!article;
- setTitle(photoTitle,post.title);
- photoTitle.hidden=article||!post.title;
- body.replaceChildren();
- if(!article)return;
+ const text=post.body?.trim()||'';
+ writing.hidden=!post.title&&!text;
  setTitle(title,post.title);
  title.hidden=!post.title;
- for(const paragraph of post.body.trim().split(/\r?\n[ \t]*\r?\n+/)){
-  const text=document.createElement('p');
-  text.textContent=paragraph;
-  body.append(text);
+ body.replaceChildren();
+ if(!text)return;
+ for(const paragraph of text.split(/\r?\n[ \t]*\r?\n+/)){
+  const content=document.createElement('p');
+  content.textContent=paragraph;
+  body.append(content);
  }
-
 }
 
 async function showPhoto(index){
@@ -89,12 +92,17 @@ async function showPhoto(index){
  const token=++requestId;
  const original=getOriginalSource(image);
  originalLink.hidden=!original;
- if(original)originalLink.href=original;
+ if(original){
+  const viewer=new URL('../original.html',import.meta.url);
+  viewer.hash=new URLSearchParams({src:original}).toString();
+  originalLink.href=viewer.href;
+ }
  else originalLink.removeAttribute('href');
  img.alt='';
  previous.disabled=next.disabled=!image||post.images.length<2;document.querySelector('#previous-post').disabled=document.querySelector('#next-post').disabled=filteredPosts().length<2;
  stopVideos(detail);
  if(!detail.open||previousPost!==post)renderWriting(post);
+ if(!image)writing.style.removeProperty('--detail-media-width');
  detail.querySelector('.detail-media').hidden=!image;
  photoViewport.hidden=!image||isVideo(image);
  const date=detail.querySelector('time');date.dateTime=post.date;date.textContent=shortDate(post.date);
@@ -105,7 +113,7 @@ async function showPhoto(index){
  document.querySelector('#slide-position').textContent=image?`photo ${imageIndex+1} / ${post.images.length}`:'';
 
  status.textContent='loading…';img.setAttribute('aria-busy','true');
- const video=document.querySelector('#detail-video');video.removeAttribute('src');video.load();
+ video.removeAttribute('src');video.load();
  if(!image){
   img.hidden=video.hidden=true;img.removeAttribute('src');img.setAttribute('aria-busy','false');status.textContent='';
  }else if(isVideo(image)){
@@ -151,8 +159,9 @@ function appendPosts({moveFocus=false}={}){
   }else{
    const excerpt=document.createElement('span');excerpt.className='text-post-excerpt';
    const title=document.createElement('strong');setTitle(title,post.title);
-   const body=document.createElement('span');body.textContent=post.body;
-   excerpt.append(title,body);button.append(excerpt);
+   excerpt.append(title);
+   if(post.body){const body=document.createElement('span');body.textContent=post.body;excerpt.append(body);}
+   button.append(excerpt);
   }
   const meta=document.createElement('div');meta.className='meta';
   const date=document.createElement('time');date.dateTime=post.date;date.textContent=shortDate(post.date);

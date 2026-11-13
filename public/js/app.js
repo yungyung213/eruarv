@@ -26,7 +26,7 @@ try{
  const pages=[...document.querySelectorAll('main[data-page]')];
  const pageModules={
   main:()=>import('./main.js?v=38'),
-  gallery:()=>import('./gallery.js?v=38')
+  gallery:()=>import('./gallery.js?v=40')
  };
  const initialized=new Set();
  document.querySelectorAll('[data-gallery-count]').forEach(count=>{count.textContent=String(photos.length).padStart(2,'0');});
@@ -52,6 +52,6 @@ try{
  window.addEventListener('popstate',route);route();
 
 }catch(error){
- const script=document.createElement('script');script.type='module';script.src=new URL(initialPage==='gallery'?'./gallery.js?v=38':'./main.js?v=38',import.meta.url);document.body.append(script);
+ const script=document.createElement('script');script.type='module';script.src=new URL(initialPage==='gallery'?'./gallery.js?v=40':'./main.js?v=38',import.meta.url);document.body.append(script);
  console.error('Shared page navigation unavailable:',error);
 }

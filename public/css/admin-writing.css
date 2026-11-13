@@ -824,15 +824,19 @@ html:has(.admin-page) { scrollbar-gutter: stable both-edges; }
   transform: rotate(45deg);
   pointer-events: none;
 }
-.admin-page .selected-values .category-chip {
+.admin-page .editor-settings .selected-values:not(:empty) {
+  padding-top: 12px;
+  gap: 4px;
+}
+.admin-page .selected-values .selection-remove {
   min-height: 25px;
   padding: 3px 9px;
   border: 1px solid var(--admin-outline);
   border-radius: 99px;
   font-size: .78rem;
 }
-.admin-page .category-chip bdi:lang(en) { font-family: "fieldwork", Pretendard, sans-serif; }
-.admin-page .category-chip svg { width: 12px; height: 12px; }
+.admin-page .selected-values .selection-remove bdi:lang(en) { font-family: "fieldwork", Pretendard, sans-serif; }
+.admin-page .selected-values .selection-remove svg { width: 12px; height: 12px; }
 
 .admin-page #editor-close { font: 400 32px/1 Pretendard, sans-serif; padding-block: 2px; }
 .admin-page :is(.media-upload .upload-action, #new-post) {
