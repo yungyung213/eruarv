@@ -8,14 +8,14 @@
         "date": "2026-11-14",
         "images": [
           {
-            "src": "media/uploads/2026-11-13/aaf75dbc-bebf-4ec3-9260-7db609ef497b.webp",
+            "src": "media/uploads/2026-11-13/1dc7365a-b545-4946-9bf9-a72a9a46cd3a.webp",
             "type": "image",
-            "alt": "무제-5.jpg",
-            "thumb": "media/uploads/2026-11-13/ffbffa8e-1d01-4d87-bf00-25770f320c76.webp",
-            "medium": "media/uploads/2026-11-13/aaf75dbc-bebf-4ec3-9260-7db609ef497b.webp",
-            "detail": "media/uploads/2026-11-13/aaf75dbc-bebf-4ec3-9260-7db609ef497b.webp",
-            "original": "media/uploads/2026-11-13/c06a4b1b-48bf-4dc7-9b07-3977a442b7bb.jpg",
-            "srcset": "media/uploads/2026-11-13/ffbffa8e-1d01-4d87-bf00-25770f320c76.webp 640w, media/uploads/2026-11-13/aaf75dbc-bebf-4ec3-9260-7db609ef497b.webp 1000w",
+            "alt": "홈페이지_썸네일2.jpg",
+            "thumb": "media/uploads/2026-11-13/b0b29f9d-d6c6-40db-842d-f0fedec608dc.webp",
+            "medium": "media/uploads/2026-11-13/1dc7365a-b545-4946-9bf9-a72a9a46cd3a.webp",
+            "detail": "media/uploads/2026-11-13/1dc7365a-b545-4946-9bf9-a72a9a46cd3a.webp",
+            "original": "media/uploads/2026-11-13/08d4a3ba-e792-45bf-ae91-3dd4d94b6347.jpg",
+            "srcset": "media/uploads/2026-11-13/b0b29f9d-d6c6-40db-842d-f0fedec608dc.webp 640w, media/uploads/2026-11-13/1dc7365a-b545-4946-9bf9-a72a9a46cd3a.webp 1000w",
             "width": 1000,
             "height": 1354
           }
@@ -25,12 +25,13 @@
           "Naru"
         ],
         "colors": [
-          "#3379d5"
+          "#ffffff",
+          "#808080"
         ],
         "thxTo": "",
         "thxUrl": ""
       },
-      "updated_at": "2026-11-13T08:24:26.278Z"
+      "updated_at": "2026-11-13T08:56:48.933Z"
     },
     {
       "id": "dbe30ad9-db42-4b2b-a3b6-440a5777e834",
