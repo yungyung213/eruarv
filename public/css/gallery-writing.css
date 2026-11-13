@@ -200,7 +200,6 @@ body {
 }
 
 #detail-body {
-  max-width: 66ch;
   color: light-dark(#333, #d2d2d2);
 }
 
