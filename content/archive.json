@@ -1569,7 +1569,8 @@
     },
     "appearance": {
       "theme": "light",
-      "particles": true
+      "particles": true,
+      "rollover": false
     }
   },
   "trash": []
