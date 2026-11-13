@@ -1,4 +1,4 @@
-import {mainMedia} from './content-data.js';
+import {mainMedia,siteSettings} from './content-data.js';
 const target=document.querySelector('#hero-media');
 let canvas=document.createElement('canvas');canvas.className='particle-canvas';canvas.setAttribute('role','img');canvas.setAttribute('aria-label','사진 입자가 부드럽게 겹쳐 전환되는 자동 슬라이드');target.append(canvas);
 
@@ -37,14 +37,23 @@ function init(){
  gl.attachShader(program,shader(gl.FRAGMENT_SHADER,`precision mediump float;varying float v_alpha;void main(){float d=length(gl_PointCoord-vec2(.5));if(d>.5)discard;float a=(1.0-smoothstep(.2,.5,d))*v_alpha;gl_FragColor=vec4(vec3(${light?'.25,.25,.24':'.66,.65,.63'}),a);}`));
  gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw new Error(gl.getProgramInfoLog(program));gl.useProgram(program);gl.enable(gl.BLEND);gl.blendFunc(gl.SRC_ALPHA,light?gl.ONE_MINUS_SRC_ALPHA:gl.ONE);gl.clearColor(...backgroundRGB,1);
  fromBuffer=gl.createBuffer();toBuffer=gl.createBuffer();
- }catch(error){console.warn('Using lighter particle renderer.');gl=null;const fallback=document.createElement('canvas');fallback.className=canvas.className;fallback.setAttribute('role','img');fallback.setAttribute('aria-label','사진 입자 미리보기');canvas.replaceWith(fallback);canvas=fallback;ctx2d=canvas.getContext('2d');}
+ }catch{gl=null;const fallback=document.createElement('canvas');fallback.className=canvas.className;fallback.setAttribute('role','img');fallback.setAttribute('aria-label','사진 입자 미리보기');canvas.replaceWith(fallback);canvas=fallback;ctx2d=canvas.getContext('2d');}
 }
 init();
 function upload(){if(!gl)return;for(const [buffer,name,data] of [[fromBuffer,'a_from',from],[toBuffer,'a_to',to]]){gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,data,gl.STATIC_DRAW);const attr=gl.getAttribLocation(program,name);gl.enableVertexAttribArray(attr);gl.vertexAttribPointer(attr,4,gl.FLOAT,false,0,0);}}
 function resize(){if(!target.clientWidth||!target.clientHeight)return;width=target.clientWidth;height=target.clientHeight;count=width<701?21000:76000;const dpr=Math.min(devicePixelRatio||1,2);canvas.width=Math.round(width*dpr);canvas.height=Math.round(height*dpr);if(gl)gl.viewport(0,0,canvas.width,canvas.height);from=points(images[index]);to=points(images[(index+1)%images.length]);upload();}
 resize();phaseStart=performance.now();new ResizeObserver(resize).observe(target);
 function switchTo(next){index=(next+images.length)%images.length;to=points(images[index]);transitioning=true;phaseStart=performance.now();upload();}
-canvas.addEventListener('pointermove',event=>{pointer=[(event.clientX/width-.5)*2,(.5-event.clientY/height)*2];},{passive:true});canvas.addEventListener('pointerleave',()=>pointer=[0,0]);
+if(siteSettings.appearance?.rollover!==false&&matchMedia('(hover: hover) and (pointer: fine)').matches){
+ const hero=canvas.closest('.hero');
+ hero.addEventListener('pointermove',event=>{
+  if(reduced.matches)return;
+  const rect=canvas.getBoundingClientRect();
+  pointer=[((event.clientX-rect.left)/rect.width-.5)*2,(.5-(event.clientY-rect.top)/rect.height)*2];
+ },{passive:true});
+ hero.addEventListener('pointerleave',()=>pointer=[0,0]);
+}
+
 document.addEventListener('visibilitychange',()=>{if(document.hidden)pausedAt=performance.now();else if(pausedAt){phaseStart+=performance.now()-pausedAt;pausedAt=0;}});
 let last=0;
 function frame(now){requestAnimationFrame(frame);if(document.hidden||target.closest('main').hidden||!from.length||now-last<30)return;last=now;
@@ -55,7 +64,7 @@ function frame(now){requestAnimationFrame(frame);if(document.hidden||target.clos
   for(const [layer,opacity] of [[0,1-eased],[1,eased]]){if(opacity<=0)continue;gl.uniform1f(gl.getUniformLocation(program,'u_layer'),layer);gl.uniform1f(gl.getUniformLocation(program,'u_opacity'),opacity);gl.drawArrays(gl.POINTS,0,count);}
  }else{
   const ctx=ctx2d,dpr=canvas.width/width;ctx.fillStyle=background;ctx.fillRect(0,0,canvas.width,canvas.height);const eased=progress*progress*(3-2*progress);
-  for(const [cloud,opacity] of [[from,1-eased],[to,eased]]){if(opacity<=0)continue;for(let i=0;i<count;i+=6){const offset=i*4,x=cloud[offset],y=cloud[offset+1],lum=cloud[offset+3];ctx.fillStyle=`rgba(${light?'64,64,62':'168,166,161'},${(.06+lum*.7)*.72*opacity})`;ctx.fillRect((x+1)*.5*canvas.width,(1-y)*.5*canvas.height,dpr,dpr);}}
+  for(const [cloud,opacity] of [[from,1-eased],[to,eased]]){if(opacity<=0)continue;for(let i=0;i<count;i+=6){const offset=i*4,depth=cloud[offset+2],x=cloud[offset]+pointer[0]*depth*.1,y=cloud[offset+1]+pointer[1]*depth*.1,lum=cloud[offset+3];ctx.fillStyle=`rgba(${light?'64,64,62':'168,166,161'},${(.06+lum*.7)*.72*opacity})`;ctx.fillRect((x+1)*.5*canvas.width,(1-y)*.5*canvas.height,dpr,dpr);}}
 
  }
  if(transitioning&&progress===1){from=to;to=points(images[(index+1)%images.length]);transitioning=false;phaseStart=now;upload();canvas.setAttribute('aria-label',images[index].alt||'사진 입자 미리보기');}

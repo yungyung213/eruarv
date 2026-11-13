@@ -1,31 +1,49 @@
 <!doctype html>
-<html lang="ko">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="referrer" content="no-referrer">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; connect-src https://iclrraqcwuctgiqqdxst.supabase.co; base-uri 'none'; form-action 'none'">
-  <title>ERU / 비밀번호 재설정</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://use.typekit.net; font-src 'self' https://use.typekit.net; connect-src https://iclrraqcwuctgiqqdxst.supabase.co; base-uri 'none'; form-action 'none'">
+  <title>ERU / Reset password</title>
+  <link rel="stylesheet" href="https://use.typekit.net/sbo6lzr.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/admin.css">
+  <link rel="stylesheet" href="css/admin-access.css?v=22">
 </head>
 <body class="admin-page">
   <main>
-    <section id="login-panel">
-      <h2>비밀번호 재설정</h2>
-      <p id="reset-status" role="status"></p>
+    <section id="login-panel" class="access-panel" aria-labelledby="access-title">
+      <a class="access-brand" href="index.html" aria-label="ERU home">eru</a>
+      <h1 id="access-title" class="access-title">Reset password</h1>
       <form id="request-reset" hidden>
-        <label>기존 Supabase 이메일<input type="email" name="email" autocomplete="email" required></label>
-        <button type="submit" class="primary">재설정 메일 보내기</button>
+        <p class="access-note" id="reset-email-help">Enter your account email to receive a reset link.</p>
+        <label for="reset-email" class="access-field">Account email
+          <input id="reset-email" type="email" name="email" autocomplete="email" aria-describedby="reset-email-help reset-status" required>
+        </label>
+        <button type="submit" class="primary access-submit">Send reset link</button>
       </form>
       <form id="set-password" hidden>
-        <label>새 비밀번호<input type="password" name="password" autocomplete="new-password" minlength="8" required></label>
-        <label>새 비밀번호 확인<input type="password" name="confirmation" autocomplete="new-password" minlength="8" required></label>
-        <button type="submit" class="primary">새 비밀번호 저장</button>
+        <div class="access-field">
+          <label for="new-password">New password</label>
+          <div class="access-password">
+            <input id="new-password" type="password" name="password" autocomplete="new-password" minlength="8" aria-describedby="reset-status" data-password-toggle required>
+          </div>
+        </div>
+        <div class="access-field">
+          <label for="confirm-password">Confirm password</label>
+          <div class="access-password">
+            <input id="confirm-password" type="password" name="confirmation" autocomplete="new-password" minlength="8" aria-describedby="reset-status" data-password-toggle required>
+          </div>
+        </div>
+        <button type="submit" class="primary access-submit">Save password</button>
       </form>
-      <a href="admin.html" class="text-action">어드민 로그인으로 돌아가기</a>
+      <p id="reset-status" class="access-feedback" role="status"></p>
+      <nav class="access-links" aria-label="Account help">
+        <a href="admin.html" class="text-action">Back to sign in</a>
+      </nav>
     </section>
   </main>
-  <script type="module" src="js/admin-reset.mjs"></script>
+  <script type="module" src="js/admin-reset.mjs?v=22"></script>
 </body>
 </html>

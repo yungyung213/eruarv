@@ -1,0 +1,237 @@
+#editor-panel,
+#categories-panel {
+  width: min(100%, 58rem);
+  margin: 2rem auto 0;
+}
+
+#editor-panel .editor-heading {
+  margin-top: 1.5rem;
+}
+
+.writing-fields {
+  display: grid;
+  gap: 1.5rem;
+  margin-block: 2rem 2.5rem;
+}
+
+.writing-fields textarea {
+  width: 100%;
+  padding: .8rem 0;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.writing-fields textarea:focus {
+  outline: none;
+  border-color: var(--blue, #0066ff);
+}
+
+.category-filter {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+}
+
+.category-filter select {
+  width: auto;
+}
+
+#new-category {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 1rem;
+  margin-block: 1rem 2rem;
+}
+
+.admin-page .access-panel .access-title {
+  font: 400 clamp(58px, 12vw, 88px)/.9 "norman-variable", "Bodoni MT", Didot, serif;
+  font-variation-settings: "wght" 400;
+  letter-spacing: -.055em;
+}
+
+.access-brand sup {
+  color: inherit;
+}
+
+.admin-page .post-filters,
+.admin-page .post-filters [role=group],
+.admin-page .library-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  align-items: center;
+}
+
+.admin-page .post-filters {
+  justify-content: space-between;
+  padding-block: 12px;
+  border-bottom: 1px solid var(--line);
+}
+
+.admin-page .post-filters input {
+  width: min(100%, 15rem);
+  margin: 0;
+}
+
+.admin-page .post-filters button[aria-pressed=true] {
+  color: var(--blue);
+}
+
+.admin-page #post-list {
+  display: block;
+}
+
+.admin-page .post-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 8px 24px;
+  padding-block: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.admin-page .post-card .post-open {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  text-align: left;
+}
+
+.admin-page .post-open :is(img, video) {
+  width: 48px;
+  height: 64px;
+  flex: none;
+  object-fit: cover;
+}
+
+.admin-page .post-open .post-info {
+  display: grid;
+  gap: 5px;
+  overflow-wrap: anywhere;
+}
+
+.admin-page .post-open small {
+  color: #a8a8a8;
+}
+
+.admin-page .post-card .post-actions {
+  margin: 0;
+}
+
+.admin-page .post-card .inline-confirm {
+  grid-column: 1 / -1;
+}
+
+#editor-panel {
+  width: 100%;
+}
+
+.editor-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: clamp(20px, 5vw, 70px);
+  margin-block: 2rem;
+}
+
+.editor-columns .writing-fields {
+  margin: 0;
+  align-content: start;
+}
+
+.admin-page .editor-columns .editor-settings {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 18px;
+  margin: 0;
+}
+
+.editor-columns textarea {
+  min-height: 22rem;
+}
+
+.admin-page .media-help {
+  margin-top: 2rem;
+}
+
+#new-character {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 1rem;
+  margin-block: 1rem 2rem;
+}
+
+.admin-page #category-list .taxonomy-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 16px;
+}
+
+.admin-page .taxonomy-row > span:not(.taxonomy-position) {
+  flex: 1;
+  min-width: min(7rem, 100%);
+}
+
+.admin-page .taxonomy-row :is(.taxonomy-edit, .inline-confirm) {
+  flex-basis: 100%;
+}
+
+.main-library {
+  margin-block: 1.5rem;
+  padding-block: 1rem;
+  border-block: 1px solid var(--line);
+}
+
+.main-library select {
+  max-width: min(100%, 15rem);
+}
+
+.admin-page .admin-preview-dialog {
+  width: min(90vw, 48rem);
+  max-height: 88dvh;
+  padding: clamp(18px, 4vw, 42px);
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: #ddd;
+}
+
+.admin-preview-dialog::backdrop {
+  background: #000b;
+}
+
+.admin-preview-dialog h2 {
+  margin-top: 24px;
+}
+
+.admin-preview-dialog p {
+  white-space: pre-wrap;
+}
+
+.admin-preview-dialog :is(img, video) {
+  display: block;
+  max-width: 100%;
+  max-height: 70dvh;
+  margin: 1rem auto;
+}
+
+@media (max-width: 700px) {
+  .editor-columns {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .admin-page .post-card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.admin-page .taxonomy-position {
+  min-width: 2ch;
+  margin-right: 0;
+  color: #a8a8a8;
+}

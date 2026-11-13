@@ -17,7 +17,11 @@ async function request(action, accessToken, body) {
     signal: AbortSignal.timeout(45000)
   });
   const result = await response.json().catch(() => ({}));
-  if (!response.ok) throw new Error(result.error || '어드민 서버 연결을 확인하세요.');
+  if (!response.ok) {
+    const error = new Error(result.error || '어드민 서버 연결을 확인하세요.');
+    error.status = response.status;
+    throw error;
+  }
   return result;
 }
 

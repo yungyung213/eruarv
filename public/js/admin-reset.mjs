@@ -1,3 +1,4 @@
+import './password-visibility.mjs';
 import {supabaseUrl, publishableKey} from './admin-reset-config.mjs';
 
 const requestForm = document.querySelector('#request-reset');
@@ -9,7 +10,12 @@ let recoveryToken = fragment.get('type') === 'recovery' ? fragment.get('access_t
 if (location.hash) history.replaceState(null, '', location.pathname);
 passwordForm.hidden = !recoveryToken;
 requestForm.hidden = !!recoveryToken;
-if (fragment.has('error')) status.textContent = '재설정 링크가 만료되었거나 이미 사용되었습니다. 새 링크를 요청하세요.';
+function showStatus(message = '', isError = false) {
+  status.textContent = message;
+  status.toggleAttribute('data-error', isError);
+}
+
+if (fragment.has('error')) showStatus('This link expired or has already been used. Request a new link.', true);
 
 async function authRequest(path, method, body, token) {
   const response = await fetch(supabaseUrl + '/auth/v1/' + path, {
@@ -29,11 +35,11 @@ async function authRequest(path, method, body, token) {
 function onSubmit(form, run) {
   form.addEventListener('submit', async event => {
     event.preventDefault();
-    const button = form.querySelector('button');
+    const button = form.querySelector('button[type=submit]');
     button.disabled = true;
-    status.textContent = '';
+    showStatus();
     try { await run(new FormData(form)); }
-    catch { status.textContent = '연결에 실패했습니다. 잠시 후 다시 시도하세요.'; }
+    catch { showStatus('Could not connect. Try again in a moment.', true); }
     finally { button.disabled = false; }
   });
 }
@@ -45,32 +51,45 @@ onSubmit(requestForm, async fields => {
     'POST',
     {email: fields.get('email').trim()}
   );
-  status.textContent = response.ok
-    ? '메일함에서 비밀번호 재설정 링크를 확인하세요.'
-    : '메일을 보내지 못했습니다. 잠시 후 다시 시도하세요.';
+  if (response.ok) {
+    showStatus('If the email matches an account, a reset link will arrive shortly.');
+  } else if (response.status === 429) {
+    showStatus('Please wait a moment before requesting another link.', true);
+  } else {
+    showStatus('Could not send a reset link. Try again in a moment.', true);
+  }
 });
 
 onSubmit(passwordForm, async fields => {
   const password = fields.get('password');
   if (password !== fields.get('confirmation')) {
-    status.textContent = '두 비밀번호를 똑같이 입력하세요.';
+    showStatus('The passwords do not match.', true);
     return;
   }
   const response = await authRequest('user', 'PUT', {password}, recoveryToken);
   if (!response.ok) {
-    if ([401, 403].includes(response.status)) {
+    const error = await response.json().catch(() => ({}));
+    const code = error.error_code ?? error.code;
+    if (['session_expired', 'session_not_found', 'bad_jwt', 'otp_expired'].includes(code) ||
+        (!code && response.status === 401)) {
       recoveryToken = null;
       passwordForm.reset();
       passwordForm.hidden = true;
       requestForm.hidden = false;
-      status.textContent = '재설정 링크가 만료되었습니다. 새 링크를 요청하세요.';
+      showStatus('This reset link expired. Request a new link.', true);
+    } else if (code === 'same_password') {
+      showStatus('Choose a password different from your current one.', true);
+    } else if (code === 'weak_password') {
+      showStatus('Choose a stronger password. Try a longer, unique password.', true);
+    } else if (code === 'reauthentication_needed') {
+      showStatus('Request a fresh reset link and open it before saving.', true);
     } else {
-      status.textContent = '새 비밀번호를 저장하지 못했습니다. 다른 비밀번호로 다시 시도하세요.';
+      showStatus('Could not save the password. Try again in a moment.', true);
     }
     return;
   }
   recoveryToken = null;
   passwordForm.reset();
   passwordForm.hidden = true;
-  status.textContent = '비밀번호를 바꿨어요. 어드민으로 돌아가 yung213과 새 비밀번호로 로그인하세요.';
+  showStatus('Password updated. Return to sign in with your new password.');
 });
