@@ -1563,7 +1563,7 @@
     },
     "appearance": {
       "theme": "light",
-      "particles": true
+      "particles": false
     }
   },
   "trash": []
