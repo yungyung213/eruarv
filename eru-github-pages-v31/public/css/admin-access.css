@@ -1,0 +1,81 @@
+.admin-page:not(.is-authenticated) main {
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 72px 24px;
+}
+.admin-page:not(.is-authenticated) header { display: none; }
+.admin-page #login-panel.access-panel {
+  width: min(100%, 360px);
+  margin: 0;
+}
+.access-panel .access-brand {
+  display: inline-block;
+  color: var(--blue);
+  font-family: "norman-variable", Georgia, serif;
+  font-size: 44px;
+  letter-spacing: -.07em;
+  line-height: 1;
+  text-decoration: none;
+}
+.admin-page .access-panel .access-title {
+  margin: 28px 0 22px;
+  color: #eee;
+  font-family: inherit;
+  font-size: clamp(28px, 7vw, 36px);
+  font-weight: 500;
+  letter-spacing: -.035em;
+  line-height: 1.2;
+}
+.admin-page .access-panel form {
+  display: grid;
+  gap: 16px;
+  margin: 0;
+}
+.access-panel .access-field {
+  display: grid;
+  gap: 6px;
+  font-size: 13px;
+  color: #bcbcbc;
+}
+.admin-page .access-field input {
+  margin: 0;
+  padding: 10px 12px;
+  border: 1px solid #4c4c4c;
+  border-radius: 6px;
+}
+.admin-page .access-field input:focus { border-color: #79a7ff; }
+.access-password { position: relative; }
+.admin-page .access-password input { padding-right: 50px; }
+.admin-page .access-password .password-toggle {
+  position: absolute;
+  inset: 0 2px 0 auto;
+  width: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  color: #aaa;
+}
+.password-toggle svg { width: 20px; height: 20px; }
+.admin-page .password-toggle:focus-visible { color: #79a7ff; }
+.admin-page .access-panel .access-feedback,
+.admin-page .access-panel .access-note {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.admin-page .access-panel .access-feedback:empty { display: none; }
+.admin-page .access-panel .access-feedback[data-error] { color: #ffadad; }
+.admin-page .access-panel .access-note { color: #b5b5b5; }
+.admin-page .access-panel .access-submit {
+  justify-self: start;
+  color: #8cb4ff;
+  font-size: 15px;
+}
+.admin-page .access-panel .access-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  margin-top: 12px;
+}
+.admin-page .access-panel #login-form { gap: 16px; }
