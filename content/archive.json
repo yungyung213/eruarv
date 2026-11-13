@@ -1497,6 +1497,18 @@
     "initialized": true,
     "mainMedia": [
       {
+        "src": "media/uploads/2026-11-13/562ecdd9-05ee-45f6-8855-8ce396fb961c.webp",
+        "type": "image",
+        "alt": "pexels-karola-g-6757656.jpg",
+        "thumb": "media/uploads/2026-11-13/c85618f1-12c3-4109-a32d-adb14768b8f1.webp",
+        "medium": "media/uploads/2026-11-13/562ecdd9-05ee-45f6-8855-8ce396fb961c.webp",
+        "detail": "media/uploads/2026-11-13/562ecdd9-05ee-45f6-8855-8ce396fb961c.webp",
+        "original": "media/uploads/2026-11-13/c76a0e8b-fd22-43d3-a594-2f8da50a48f9.jpg",
+        "srcset": "media/uploads/2026-11-13/c85618f1-12c3-4109-a32d-adb14768b8f1.webp 640w, media/uploads/2026-11-13/562ecdd9-05ee-45f6-8855-8ce396fb961c.webp 2400w",
+        "width": 2400,
+        "height": 3600
+      },
+      {
         "src": "images/main/main-01-1600.jpg",
         "type": "image",
         "alt": "Yellow line on weathered pavement",
