@@ -1,6 +1,57 @@
 {
   "posts": [
     {
+      "id": "4cd20f7a-5a8e-43fe-9bee-ed89116af806",
+      "status": "published",
+      "payload": {
+        "id": "4cd20f7a-5a8e-43fe-9bee-ed89116af806",
+        "date": "2026-11-14",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-15/8315fecd-5399-4d69-934a-2b64d9505fc3.webp",
+            "type": "image",
+            "alt": "",
+            "thumb": "media/uploads/2026-11-15/a4ec5673-06d8-47da-bb51-a44619d2e8f1.webp",
+            "medium": "media/uploads/2026-11-15/8315fecd-5399-4d69-934a-2b64d9505fc3.webp",
+            "detail": "media/uploads/2026-11-15/8315fecd-5399-4d69-934a-2b64d9505fc3.webp",
+            "original": "media/uploads/2026-11-15/4d34a42a-3203-4c14-b25d-77ea624f2a8e.jpg",
+            "srcset": "media/uploads/2026-11-15/a4ec5673-06d8-47da-bb51-a44619d2e8f1.webp 640w, media/uploads/2026-11-15/8315fecd-5399-4d69-934a-2b64d9505fc3.webp 946w",
+            "width": 946,
+            "height": 2048
+          },
+          {
+            "src": "media/uploads/2026-11-15/0a5920bd-0e6f-4621-a3dc-16eda0ba3c27.webp",
+            "type": "image",
+            "alt": "",
+            "thumb": "media/uploads/2026-11-15/d1e24edd-9526-4996-b936-e141d3c909dd.webp",
+            "medium": "media/uploads/2026-11-15/0a5920bd-0e6f-4621-a3dc-16eda0ba3c27.webp",
+            "detail": "media/uploads/2026-11-15/0a5920bd-0e6f-4621-a3dc-16eda0ba3c27.webp",
+            "original": "media/uploads/2026-11-15/be3f0824-0e5e-4129-8e0b-cb0b8794ff75.jpg",
+            "srcset": "media/uploads/2026-11-15/d1e24edd-9526-4996-b936-e141d3c909dd.webp 640w, media/uploads/2026-11-15/0a5920bd-0e6f-4621-a3dc-16eda0ba3c27.webp 946w",
+            "width": 946,
+            "height": 2048
+          }
+        ],
+        "genre": "LDS",
+        "categories": [
+          "LDS"
+        ],
+        "other": [
+          "Lee Seo-eon",
+          "Naru"
+        ],
+        "colors": [
+          "#303f8f",
+          "#3379d5",
+          "#ffffff"
+        ],
+        "thxTo": "yume",
+        "thxUrl": "https://x.com/moartstud1o"
+      },
+      "created_at": "2026-11-15T08:39:24.016Z",
+      "updated_at": "2026-11-15T08:39:24.016Z"
+    },
+    {
       "id": "5a92a9fc-20d5-4810-b042-2df575aebd18",
       "status": "published",
       "payload": {
