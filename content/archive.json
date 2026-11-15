@@ -1619,7 +1619,7 @@
     },
     "appearance": {
       "theme": "light",
-      "particles": true,
+      "particles": false,
       "rollover": false
     }
   },
