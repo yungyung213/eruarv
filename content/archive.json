@@ -1,6 +1,77 @@
 {
   "posts": [
     {
+      "id": "b542ae99-0511-431a-bbda-7e16b35918a3",
+      "status": "published",
+      "payload": {
+        "id": "b542ae99-0511-431a-bbda-7e16b35918a3",
+        "date": "2026-11-18",
+        "title": "“Shh. The battlefield is already tuned to my frequency.”",
+        "images": [
+          {
+            "src": "media/uploads/2026-11-18/7d81d6a2-e065-4b88-a631-41810f606d02.webp",
+            "type": "image",
+            "alt": "",
+            "thumb": "media/uploads/2026-11-18/1f99d06b-5f52-47a2-959c-1e67ce0d301b.webp",
+            "medium": "media/uploads/2026-11-18/7d81d6a2-e065-4b88-a631-41810f606d02.webp",
+            "detail": "media/uploads/2026-11-18/7d81d6a2-e065-4b88-a631-41810f606d02.webp",
+            "original": "media/uploads/2026-11-18/e651cf31-05c8-43a3-9b13-ea1d304db333.jpg",
+            "srcset": "media/uploads/2026-11-18/1f99d06b-5f52-47a2-959c-1e67ce0d301b.webp 640w, media/uploads/2026-11-18/7d81d6a2-e065-4b88-a631-41810f606d02.webp 1920w",
+            "width": 1920,
+            "height": 1080
+          },
+          {
+            "src": "media/uploads/2026-11-18/01418637-d3f0-4753-a0fe-d04d1d7176b2.webp",
+            "type": "image",
+            "alt": "",
+            "thumb": "media/uploads/2026-11-18/f55517f8-6d7c-4305-aa8d-bd504878b60d.webp",
+            "medium": "media/uploads/2026-11-18/01418637-d3f0-4753-a0fe-d04d1d7176b2.webp",
+            "detail": "media/uploads/2026-11-18/01418637-d3f0-4753-a0fe-d04d1d7176b2.webp",
+            "original": "media/uploads/2026-11-18/6456d66e-4810-4378-b984-db0afb3c7b4c.jpg",
+            "srcset": "media/uploads/2026-11-18/f55517f8-6d7c-4305-aa8d-bd504878b60d.webp 640w, media/uploads/2026-11-18/01418637-d3f0-4753-a0fe-d04d1d7176b2.webp 1080w",
+            "width": 1080,
+            "height": 2340
+          },
+          {
+            "src": "media/uploads/2026-11-18/96177496-9099-49d7-9365-05b61f62bf0f.webp",
+            "type": "image",
+            "alt": "",
+            "thumb": "media/uploads/2026-11-18/49eee99d-3b4d-4191-8411-fe48908dd0c2.webp",
+            "medium": "media/uploads/2026-11-18/96177496-9099-49d7-9365-05b61f62bf0f.webp",
+            "detail": "media/uploads/2026-11-18/96177496-9099-49d7-9365-05b61f62bf0f.webp",
+            "original": "media/uploads/2026-11-18/3a34d38e-2593-4c09-8f05-c33eefa923dc.jpg",
+            "srcset": "media/uploads/2026-11-18/49eee99d-3b4d-4191-8411-fe48908dd0c2.webp 640w, media/uploads/2026-11-18/96177496-9099-49d7-9365-05b61f62bf0f.webp 1080w",
+            "width": 1080,
+            "height": 2340
+          },
+          {
+            "src": "media/uploads/2026-11-18/fae66f1a-9d33-48fe-8493-a7be2020e198.webp",
+            "type": "image",
+            "alt": "",
+            "thumb": "media/uploads/2026-11-18/7e8e9fa1-56e3-4ade-be2a-9b24aeb8fea2.webp",
+            "medium": "media/uploads/2026-11-18/fae66f1a-9d33-48fe-8493-a7be2020e198.webp",
+            "detail": "media/uploads/2026-11-18/fae66f1a-9d33-48fe-8493-a7be2020e198.webp",
+            "original": "media/uploads/2026-11-18/846868a0-63b8-4eaf-a10d-f793cf96f735.jpg",
+            "srcset": "media/uploads/2026-11-18/7e8e9fa1-56e3-4ade-be2a-9b24aeb8fea2.webp 640w, media/uploads/2026-11-18/fae66f1a-9d33-48fe-8493-a7be2020e198.webp 1080w",
+            "width": 1080,
+            "height": 2340
+          }
+        ],
+        "genre": "LDS",
+        "categories": [
+          "LDS"
+        ],
+        "other": [
+          "Naru"
+        ],
+        "colors": [],
+        "thxTo": "yamu",
+        "thxUrl": "https://x.com/yamuyam39/status/2122962132061057094?a=-AI65uRA5H_3w9fgFaw&s=20"
+      },
+      "created_at": "2026-11-18T12:33:45.449Z",
+      "updated_at": "2026-11-18T12:33:45.449Z"
+    },
+    {
       "id": "92374f59-54d6-4e3a-b673-8c6da6018ff3",
       "status": "published",
       "payload": {
