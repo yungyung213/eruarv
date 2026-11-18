@@ -1824,8 +1824,8 @@
       ],
       "genre": [
         "PHOTO",
-        "TEXT",
-        "LDS"
+        "LDS",
+        "TEXT"
       ]
     },
     "appearance": {
