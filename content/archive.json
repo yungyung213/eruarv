@@ -9,6 +9,18 @@
         "title": "“Shh. The battlefield is already tuned to my frequency.”",
         "images": [
           {
+            "src": "media/uploads/2026-11-18/96177496-9099-49d7-9365-05b61f62bf0f.webp",
+            "type": "image",
+            "alt": "",
+            "thumb": "media/uploads/2026-11-18/49eee99d-3b4d-4191-8411-fe48908dd0c2.webp",
+            "medium": "media/uploads/2026-11-18/96177496-9099-49d7-9365-05b61f62bf0f.webp",
+            "detail": "media/uploads/2026-11-18/96177496-9099-49d7-9365-05b61f62bf0f.webp",
+            "original": "media/uploads/2026-11-18/3a34d38e-2593-4c09-8f05-c33eefa923dc.jpg",
+            "srcset": "media/uploads/2026-11-18/49eee99d-3b4d-4191-8411-fe48908dd0c2.webp 640w, media/uploads/2026-11-18/96177496-9099-49d7-9365-05b61f62bf0f.webp 1080w",
+            "width": 1080,
+            "height": 2340
+          },
+          {
             "src": "media/uploads/2026-11-18/7d81d6a2-e065-4b88-a631-41810f606d02.webp",
             "type": "image",
             "alt": "",
@@ -29,18 +41,6 @@
             "detail": "media/uploads/2026-11-18/01418637-d3f0-4753-a0fe-d04d1d7176b2.webp",
             "original": "media/uploads/2026-11-18/6456d66e-4810-4378-b984-db0afb3c7b4c.jpg",
             "srcset": "media/uploads/2026-11-18/f55517f8-6d7c-4305-aa8d-bd504878b60d.webp 640w, media/uploads/2026-11-18/01418637-d3f0-4753-a0fe-d04d1d7176b2.webp 1080w",
-            "width": 1080,
-            "height": 2340
-          },
-          {
-            "src": "media/uploads/2026-11-18/96177496-9099-49d7-9365-05b61f62bf0f.webp",
-            "type": "image",
-            "alt": "",
-            "thumb": "media/uploads/2026-11-18/49eee99d-3b4d-4191-8411-fe48908dd0c2.webp",
-            "medium": "media/uploads/2026-11-18/96177496-9099-49d7-9365-05b61f62bf0f.webp",
-            "detail": "media/uploads/2026-11-18/96177496-9099-49d7-9365-05b61f62bf0f.webp",
-            "original": "media/uploads/2026-11-18/3a34d38e-2593-4c09-8f05-c33eefa923dc.jpg",
-            "srcset": "media/uploads/2026-11-18/49eee99d-3b4d-4191-8411-fe48908dd0c2.webp 640w, media/uploads/2026-11-18/96177496-9099-49d7-9365-05b61f62bf0f.webp 1080w",
             "width": 1080,
             "height": 2340
           },
@@ -69,7 +69,7 @@
         "thxUrl": "https://x.com/yamuyam39/status/2122962132061057094?a=-AI65uRA5H_3w9fgFaw&s=20"
       },
       "created_at": "2026-11-18T12:33:45.449Z",
-      "updated_at": "2026-11-18T12:33:45.449Z"
+      "updated_at": "2026-11-18T12:37:58.233Z"
     },
     {
       "id": "92374f59-54d6-4e3a-b673-8c6da6018ff3",
